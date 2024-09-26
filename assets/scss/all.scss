@@ -1,5 +1,7 @@
 // 載入 Noto Sans TC
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+// 載入 Google icons
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 @import "../../node_modules/bootstrap/scss/functions";
 @import "./utils/variables";
@@ -12,7 +14,11 @@
 
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
+@import "./utils/mixin";
 @import "./base/base";
+
+@import "./components/learn-more-H";
+
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 
