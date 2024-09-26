@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>愉運 Move with Joy</title>
+
+    <style>
+      .box {
+        width: 160px;
+        height: 160px;
+      }
+    </style>
+    <script type="module" crossorigin src="/Hexschool_2024-Independent-study/assets/main-c17112e5.js"></script>
+    <link rel="stylesheet" href="/Hexschool_2024-Independent-study/assets/main-3ed8f8db.css">
+  </head>
+
+  <body>
+    <div class="container my-12">
+      <h1>Guideline</h1>
+      <hr class="my-8" />
+      <h2 class="mb-8">預設</h2>
+      <h3 class="mb-8">1. 文字、標題顏色 #484848</h3>
+
+      <!-- 標題大小 -->
+      <div class="mb-8">
+        <h3 class="mb-4">2. 標題大小</h3>
+        <table class="table table-hover align-middle ms-8" style="width: 400px">
+          <thead>
+            <tr>
+              <th>標題</th>
+              <th>大小</th>
+              <th>字重</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>h1</td>
+              <td>40px</td>
+              <td rowspan="4">700</td>
+            </tr>
+            <tr>
+              <td>h2</td>
+              <td>32px</td>
+            </tr>
+            <tr>
+              <td>h3</td>
+              <td>28px</td>
+            </tr>
+            <tr>
+              <td>h4</td>
+              <td>24px</td>
+            </tr>
+            <tr>
+              <td>h5</td>
+              <td>20px</td>
+              <td rowspan="2">500</td>
+            </tr>
+            <tr>
+              <td>h6</td>
+              <td>16px</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 文字大小 -->
+      <div class="mb-8">
+        <h3 class="mb-4">3. 文字大小</h3>
+        <table class="table table-hover align-middle ms-8" style="width: 400px">
+          <thead>
+            <tr>
+              <th>class</th>
+              <th>大小</th>
+              <th>字重</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>fs-1</td>
+              <td>40px</td>
+              <td rowspan="7">400</td>
+            </tr>
+            <tr>
+              <td>fs-2</td>
+              <td>32px</td>
+            </tr>
+            <tr>
+              <td>fs-3</td>
+              <td>28px</td>
+            </tr>
+            <tr>
+              <td>fs-4</td>
+              <td>24px</td>
+            </tr>
+            <tr>
+              <td>fs-5</td>
+              <td>20px</td>
+            </tr>
+            <tr>
+              <td>fs-6</td>
+              <td>16px</td>
+            </tr>
+            <tr>
+              <td>fs-7</td>
+              <td>14px</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 字重 -->
+      <div class="mb-8">
+        <h3 class="mb-4">4. Bootstrap 字重</h3>
+        <table class="table table-hover align-middle ms-8" style="width: 300px">
+          <thead>
+            <tr>
+              <th>class</th>
+              <th>字重</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-bold">fw-bold</td>
+              <td>700</td>
+            </tr>
+            <tr>
+              <td class="fw-medium">fw-medium</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td class="fw-normal">fw-normal</td>
+              <td>400</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 顏色 -->
+      <div class="mb-8">
+        <h3 class="mb-4">5. 顏色</h3>
+        <div class="d-flex ms-8 mb-4">
+          <div
+            class="box bg-primary-1 d-flex flex-column justify-content-center align-items-center me-4"
+          >
+            <p class="fs-4 mb-2">primary-1</p>
+            <p>#F6F2E0</p>
+          </div>
+
+          <div
+            class="box bg-primary d-flex flex-column justify-content-center align-items-center me-4"
+          >
+            <p class="fs-4 mb-2">primary</p>
+            <p>#E79776</p>
+          </div>
+          <div
+            class="box bg-primary-2 d-flex flex-column justify-content-center align-items-center"
+          >
+            <p class="fs-4 mb-2">primary-2</p>
+            <p>#F6F4E9</p>
+          </div>
+        </div>
+        <div class="d-flex ms-8 mb-4">
+          <div
+            class="box bg-secondary-1 d-flex flex-column justify-content-center align-items-center me-4"
+          >
+            <p class="fs-4 mb-2">secondary-1</p>
+            <p>#D2EAF5</p>
+          </div>
+
+          <div
+            class="box bg-secondary d-flex flex-column justify-content-center align-items-center me-4"
+          >
+            <p class="fs-4 mb-2">secondary</p>
+            <p>#84CCC9</p>
+          </div>
+          <div
+            class="box bg-secondary-2 d-flex flex-column justify-content-center align-items-center"
+          >
+            <p class="fs-4 mb-2 text-white">secondary-2</p>
+            <p class="text-white">#487181</p>
+          </div>
+        </div>
+        <div class="d-flex ms-8 mb-4">
+          <div
+            class="box border d-flex flex-column justify-content-center align-items-center me-4"
+          >
+            <p class="fs-4 mb-2">white</p>
+            <p>#FFFFFF</p>
+          </div>
+          <div
+            class="box bg-neutral-1 d-flex flex-column justify-content-center align-items-center me-4"
+          >
+            <p class="fs-4 mb-2 text-white">neutral-1</p>
+            <p class="text-white">#484848</p>
+          </div>
+
+          <div
+            class="box bg-neutral-2 d-flex flex-column justify-content-center align-items-center me-4"
+          >
+            <p class="fs-4 mb-2 text-white">neutral-2</p>
+            <p class="text-white">#121212</p>
+          </div>
+          <div
+            class="box bg-black d-flex flex-column justify-content-center align-items-center me-4"
+          >
+            <p class="fs-4 mb-2 text-white">black</p>
+            <p class="text-white">#000000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 間距 -->
+      <div class="mb-8">
+        <h3 class="mb-4">6. 間距</h3>
+        <h5 class="ms-8 mb-4 p-2 text-primary">class 數值 = 大小 ÷ 4</h5>
+        <table class="table table-hover align-middle ms-8" style="width: 300px">
+          <thead>
+            <tr>
+              <th>class 數值</th>
+              <th>大小</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>0px</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>4px</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>8px</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>12px</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>16px</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>20px</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>24px</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>28px</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>32px</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>36px</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>40px</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>48px</td>
+            </tr>
+            <tr>
+              <td>28</td>
+              <td>112px</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 圓角 -->
+      <div class="mb-8">
+        <h3 class="mb-4">7. 圓角</h3>
+        <figure class="figure ms-8 me-4">
+          <img
+            src="/Hexschool_2024-Independent-study/assets/2148247158-a43d5f80.png"
+            class="figure-img img-fluid rounded"
+            alt="..."
+            style="width: 200px"
+          />
+          <figcaption class="figure-caption text-center">
+            class = "rounded"，10px
+          </figcaption>
+        </figure>
+        <figure class="figure">
+          <img
+            src="/Hexschool_2024-Independent-study/assets/2148247158-a43d5f80.png"
+            class="figure-img img-fluid rounded-20"
+            alt="..."
+            style="width: 200px"
+          />
+          <figcaption class="figure-caption text-center">
+            class = "rounded-20"，20px
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- mixin 斷點設定 -->
+      <div class="mb-8">
+        <h3 class="mb-4">8. mixin 斷點設定</h3>
+        <h5 class="ms-8 mb-4 p-2 text-primary">
+          手刻 CSS RWD, 用 @include 引用
+        </h5>
+        <p
+          class="ms-10 mb-4 p-4 d-inline-block"
+          style="background-color: #f4f4f5"
+        >
+          例如：高度 2px, 尺寸寬 ≥992px 時變 4px<br />
+          <span class="ms-4"></span> hr { <br />
+          <span class="ms-8"></span>height: 2px; <br />
+          <span class="ms-8"></span>background-color: $secondary; <br />
+          <br />
+          <span class="ms-8"></span
+          ><span class="text-danger fw-medium">@include lg</span> { <br />
+          <span class="ms-12"></span>height: 4px; <br />
+          <span class="ms-8"></span>} <br />
+          <span class="ms-4"></span>}
+        </p>
+        <table class="table table-hover align-middle ms-8" style="width: 300px">
+          <thead>
+            <tr>
+              <th>@include 名稱</th>
+              <th>斷點</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>xxl</td>
+              <td>≥1400px</td>
+            </tr>
+            <tr>
+              <td>xl</td>
+              <td>≥1200px</td>
+            </tr>
+            <tr>
+              <td>lg</td>
+              <td>≥992px</td>
+            </tr>
+            <tr>
+              <td>md</td>
+              <td>≥768px</td>
+            </tr>
+            <tr>
+              <td>sm</td>
+              <td>≥576px</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 分隔線 -->
+      <div class="mb-8">
+        <h3 class="mb-4">9. 分隔線</h3>
+        <p class="ms-8 mb-1">顏色：#84CCC9</p>
+        <p class="ms-8">高度：2px，尺寸寬 ≥992px 時變 4px</p>
+        <hr class="m-8" />
+      </div>
+
+      <!-- 分隔線 -->
+      <div class="mb-8">
+        <h3 class="mb-4">10. 元件</h3>
+        <h4 class="mb-4 ms-8 fs-5">
+          a. 了解更多_橫式按鈕<span class="ms-4 fs-6 fw-normal"
+            >H → Horizontal</span
+          >
+        </h4>
+        <div class="d-flex">
+          <div class="ms-12">
+            <a href="#" class="learn-more-H-lg mb-2">
+              了解更多<span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </a>
+            <p class="mb-1">
+              class="<span class="text-primary fw-medium">learn-more-H-lg</span
+              >"
+            </p>
+            <p>按鈕 92 × 24，尺寸寬 ≥992px 時變 100 × 32</p>
+            <p
+              class="my-4 mb-4 p-4 d-inline-block"
+              style="background-color: #f4f4f5"
+            >
+              &lt;a href=&quot;#&quot; class=&quot;learn-more-H-lg&quot;&gt;
+              <br />
+              <span class="ms-4"></span>了解更多&lt;span
+              class=&quot;material-symbols-outlined&quot;&gt;
+              <br />
+              <span class="ms-8"></span>chevron_right <br />
+              <span class="ms-4"></span>&lt;/span&gt; <br />
+              &lt;/a&gt;
+            </p>
+          </div>
+          <div class="ms-12">
+            <a href="#" class="learn-more-H mb-2">
+              了解更多<span class="material-symbols-outlined">
+                chevron_right
+              </span>
+            </a>
+            <p class="mb-1">
+              class="<span class="text-primary fw-medium">learn-more-H</span>"
+            </p>
+            <p>按鈕 92 × 24</p>
+            <p
+              class="my-4 mb-4 p-4 d-inline-block"
+              style="background-color: #f4f4f5"
+            >
+              &lt;a href=&quot;#&quot; class=&quot;learn-more-H&quot;&gt;
+              <br />
+              <span class="ms-4"></span>了解更多&lt;span
+              class=&quot;material-symbols-outlined&quot;&gt;
+              <br />
+              <span class="ms-8"></span>chevron_right <br />
+              <span class="ms-4"></span>&lt;/span&gt; <br />
+              &lt;/a&gt;
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
