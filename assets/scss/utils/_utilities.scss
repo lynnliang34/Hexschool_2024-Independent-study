@@ -32,3 +32,28 @@ $utilities: map-merge(
     ),
   )
 );
+
+
+// 自訂直角
+$utilities: map-merge($utilities,
+        ("rounded-top-right": (property: border-top-right-radius,
+                class: rounded-top-right,
+                values: (0: 0px,
+                ),
+            ),
+            "rounded-top-left": (property: border-top-left-radius,
+                class: rounded-top-left,
+                values: (0: 0px,
+                ),
+            ),
+            "rounded-bottom-left": (property: border-bottom-left-radius,
+                class: rounded-bottom-left,
+                values: (0: 0px,
+                ),
+            ),
+            "rounded-bottom-right": (property: border-bottom-right-radius,
+                class: rounded-bottom-right,
+                values: (0: 0px,
+                ),
+            ),
+        ));
