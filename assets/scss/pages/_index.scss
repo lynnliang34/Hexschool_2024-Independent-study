@@ -1,1 +1,26 @@
+.index{
+    .indexBanner{
+        padding-top: 44px;
+        padding-bottom: 398px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
 
+@include lg{
+    .index{
+        .indexBanner{
+            padding-top: 385px;
+            padding-bottom: 229.75px;
+            .logoIcon{
+                width: 100px;
+                height: 36.25px;
+            }
+
+            .bannerText{
+                font-size: 56px;
+            }
+        }
+    }
+}
