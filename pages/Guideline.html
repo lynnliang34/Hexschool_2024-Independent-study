@@ -22,7 +22,7 @@
       <h3 class="mb-8">1. 文字、標題顏色 #484848</h3>
 
       <!-- 標題大小 -->
-      <div class="mb-8">
+      <div class="mb-15">
         <h3 class="mb-4">2. 標題大小</h3>
         <table class="table table-hover align-middle ms-8" style="width: 400px">
           <thead>
@@ -64,7 +64,7 @@
       </div>
 
       <!-- 文字大小 -->
-      <div class="mb-8">
+      <div class="mb-15">
         <h3 class="mb-4">3. 文字大小</h3>
         <h5 class="ms-8 mb-4 text-primary">&lt;p&gt; 字重 400</h5>
         <table class="table table-hover align-middle ms-8" style="width: 250px">
@@ -112,7 +112,7 @@
       </div>
 
       <!-- 字重 -->
-      <div class="mb-8">
+      <div class="mb-15">
         <h3 class="mb-4">4. Bootstrap 字重</h3>
         <table class="table table-hover align-middle ms-8" style="width: 300px">
           <thead>
@@ -139,7 +139,7 @@
       </div>
 
       <!-- 顏色 -->
-      <div class="mb-8">
+      <div class="mb-15">
         <h3 class="mb-4">5. 顏色</h3>
         <div class="d-flex ms-8 mb-4">
           <div
@@ -213,7 +213,7 @@
       </div>
 
       <!-- 間距 -->
-      <div class="mb-8">
+      <div class="mb-15">
         <h3 class="mb-4">6. 間距</h3>
         <h5 class="ms-8 mb-4 p-2 text-primary">class 數值 = 大小 ÷ 4</h5>
         <table class="table table-hover align-middle ms-8" style="width: 300px">
@@ -293,7 +293,7 @@
       </div>
 
       <!-- 圓角 -->
-      <div class="mb-8">
+      <div class="mb-15">
         <h3 class="mb-4">7. 圓角</h3>
         <figure class="figure ms-8 me-4">
           <img
@@ -320,7 +320,7 @@
       </div>
 
       <!-- mixin 斷點設定 -->
-      <div class="mb-8">
+      <div class="mb-15">
         <h3 class="mb-4">8. mixin 斷點設定</h3>
         <h5 class="ms-8 mb-4 p-2 text-primary">
           手刻 CSS RWD, 用 @include 引用
@@ -372,17 +372,99 @@
         </table>
       </div>
 
+      <!-- 限制行數，多的... -->
+      <div class="mb-15">
+        <h3 class="mb-4">9. 限制行數，多的...</h3>
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col">
+            <div class="ms-8 mb-4">
+              <p class="p-4 d-inline-block" style="background-color: #f4f4f5">
+                &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Cupiditate repudiandae maiores debitis hic culpa incidunt
+                optio aspernatur, error provident veniam. Odio maxime quod
+                cumque tempora? Sunt animi nam officia dolor. Temporibus
+                accusamus, quis facilis consequuntur voluptas nisi rem itaque
+                nemo cumque quas dolor qui laboriosam! Repellat voluptatem
+                dolores, nostrum, placeat nesciunt mollitia autem pariatur
+                expedita quaerat ea aliquam architecto. Accusantium. &lt;/p&gt;
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="ms-8 ms-lg-0 mb-4">
+              <p>例如：手機版最多4行，lg 以上電腦版最多2行</p>
+              <p>class="up-to-4-lines up-to-2-lines-lg"</p>
+              <div class="bg-primary-2 my-4 mb-4 p-4">
+                <p class="up-to-4-lines up-to-2-lines-lg">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate repudiandae maiores debitis hic culpa incidunt
+                  optio aspernatur, error provident veniam. Odio maxime quod
+                  cumque tempora? Sunt animi nam officia dolor. Temporibus
+                  accusamus, quis facilis consequuntur voluptas nisi rem itaque
+                  nemo cumque quas dolor qui laboriosam! Repellat voluptatem
+                  dolores, nostrum, placeat nesciunt mollitia autem pariatur
+                  expedita quaerat ea aliquam architecto. Accusantium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5 class="ms-6 mb-4 p-2 text-primary">class="up-to-n-lines-斷點"</h5>
+        <table class="table table-hover align-middle ms-8" style="width: 400px">
+          <thead>
+            <tr>
+              <th>class 名稱</th>
+              <th>說明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>up-to-2-lines</td>
+              <td>限制顯示2行</td>
+            </tr>
+            <tr>
+              <td>up-to-3-lines</td>
+              <td>限制顯示3行</td>
+            </tr>
+            <tr>
+              <td>up-to-4-lines</td>
+              <td>限制顯示4行</td>
+            </tr>
+            <tr>
+              <td>up-to-5-lines</td>
+              <td>限制顯示5行</td>
+            </tr>
+            <tr>
+              <td>up-to-2-lines-lg</td>
+              <td>lg 以上，限制顯示2行</td>
+            </tr>
+            <tr>
+              <td>up-to-3-lines-lg</td>
+              <td>lg 以上，限制顯示3行</td>
+            </tr>
+            <tr>
+              <td>up-to-4-lines-lg</td>
+              <td>lg 以上，限制顯示4行</td>
+            </tr>
+            <tr>
+              <td>up-to-3-lines-xxl</td>
+              <td>xxl 以上，限制顯示3行</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <!-- 分隔線 -->
-      <div class="mb-8">
-        <h3 class="mb-4">9. 分隔線</h3>
+      <div class="mb-15">
+        <h3 class="mb-4">10. 分隔線</h3>
         <p class="ms-8 mb-1">顏色：#84CCC9</p>
         <p class="ms-8">高度：2px，尺寸寬 ≥992px 時變 4px</p>
         <hr class="m-8" />
       </div>
 
-      <!-- 分隔線 -->
+      <!-- 元件 -->
       <div class="mb-8">
-        <h3 class="mb-4">10. 元件</h3>
+        <h3 class="mb-4">11. 元件</h3>
         <h4 class="mb-4 ms-8 fs-5">
           a. 了解更多_橫式按鈕<span class="ms-4 fs-6 fw-normal"
             >H → Horizontal</span
