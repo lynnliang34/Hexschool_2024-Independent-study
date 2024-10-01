@@ -1,0 +1,171 @@
+// section2
+// 手機版標籤
+.knowledge-labals {
+  border-radius: 5px;
+}
+
+.knowledge-labal {
+  width: 40px;
+  height: 24px;
+  padding-bottom: 4px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+
+  &:hover {
+    color: $primary;
+    border-bottom: 1px solid $primary;
+  }
+}
+
+// 電腦版標籤
+.knowledge-labal-lg {
+  width: 120px;
+  height: 93px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h4 {
+    transition: 0.3s;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    fill: $neutral-1;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    h4 {
+      color: $primary;
+    }
+    .icon {
+      fill: $primary;
+    }
+  }
+}
+
+// 電腦版標籤-左上圓角
+.knowledge-labals-lg li:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+// 電腦版標籤-右上圓角
+.knowledge-labals-lg li:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+// section3
+.bg-lg-primary-2 {
+  @include lg {
+    background-color: $primary-2;
+  }
+}
+
+.knowledge-articles {
+  // 主文章
+  .primary-article {
+    @include lg {
+      width: 44.753%;
+      max-width: 580px;
+      // 抵銷 title-label 的 margin-top: -44px;
+      margin-top: 44px;
+    }
+  }
+  // 主文章標題
+  .title-label {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $primary;
+    border-radius: 10px 10px 10px 0;
+    background-color: $primary-2;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include lg {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: -44px;
+    }
+  }
+
+  // 文章列表
+  .article {
+    @include lg {
+      max-width: 648px;
+    }
+  }
+
+  .mb-article {
+    margin-bottom: 24px;
+
+    @include lg {
+      margin-bottom: 34px;
+    }
+
+    @include xxl {
+      margin-bottom: 54px;
+    }
+  }
+
+  .title {
+    color: $primary;
+    font-size: 14px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $primary;
+
+    @include lg {
+      font-size: 24px;
+      font-weight: 700;
+      padding-bottom: 0px;
+      border-bottom: 0;
+      height: 28px;
+      overflow: hidden;
+    }
+  }
+
+  .photo {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 100%;
+
+    @include xl {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  .img {
+    width: 106px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 5px;
+
+    @include md {
+      width: 180px;
+      height: 126px;
+      border-radius: 10px;
+    }
+
+    @include lg {
+      width: 205.7px;
+      height: 144px;
+      border-radius: 10px;
+    }
+
+    @include xl {
+      width: 240px;
+      height: 168px;
+      border-radius: 10px;
+    }
+  }
+}
