@@ -26,3 +26,19 @@
     color: $white;
   }
 }
+
+//  section3
+
+.explore-bordered-title {
+
+  border: 2px solid #E79776; /* 邊框寬度、樣式與顏色 */
+  padding: 8px;          /* 添加內邊距以避免文本緊貼邊框 */
+  border-radius: 5px;     /* 讓邊框的角稍微圓滑一點（可選） */
+  width: fit-content;
+  text-align: left;
+  color: #E79776;
+}
+
+.primary-2 {
+  color: $primary-2;
+}
