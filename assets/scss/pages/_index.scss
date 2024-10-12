@@ -21,10 +21,34 @@
                 width: 100px;
                 height: 36.25px;
             }
+        }
+    }
+}
 
-            .bannerText{
-                font-size: 56px;
+.index{
+    .featureCourses{
+        .decoLine{
+            height: 8px;
+            &::before{
+                content: "";
+                position: absolute;
+                background-image: url(/assets/images/line/標題裝飾.png);
+                width: 100%;
+                height: 8px;
             }
+        }
+    }
+}
+
+@include lg{
+    .index{
+        .featureCourses{
+            .decoLine{
+                height: 12px;
+            &::before{
+                height: 12px;
+            }
+        }
         }
     }
 }
