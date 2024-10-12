@@ -67,6 +67,17 @@
   }
 }
 
+// xl 以上，限制顯示4行
+.up-to-4-lines-xl {
+  @include xl {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 // xxl 以上，限制顯示3行
 .up-to-3-lines-xxl {
   @include xxl {

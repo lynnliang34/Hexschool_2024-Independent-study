@@ -159,13 +159,59 @@
     @include lg {
       width: 205.7px;
       height: 144px;
-      border-radius: 10px;
     }
 
     @include xl {
       width: 240px;
       height: 168px;
+    }
+  }
+}
+
+// 最新文章
+.new-articles {
+  .title {
+    color: $primary;
+    font-size: 14px;
+
+    @include lg {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    @include xl {
+      font-size: 40px;
+    }
+  }
+
+  .img {
+    max-width: none;
+    width: 121px;
+    height: 107px;
+    object-fit: cover;
+    border-radius: 5px;
+
+    @include md {
+      width: 205.5px;
+      height: 126px;
       border-radius: 10px;
     }
+
+    @include lg {
+      width: 373.6px;
+      height: 251.6px;
+    }
+
+    @include xl {
+      width: 496px;
+      height: 334px;
+    }
+  }
+}
+
+// ≤576px 文字行高為 1.2
+.line-height {
+  @media screen and (max-width: 576px) {
+    line-height: 1.2;
   }
 }
