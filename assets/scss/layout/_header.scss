@@ -1,4 +1,8 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  background: #69f0ae;
+  height: 56px;
+
+  @include lg {
+    height: 105px;
+  }
 }
