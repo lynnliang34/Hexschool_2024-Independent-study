@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 載入 Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>愉運 Move with Joy</title>
   </head>
+
   <body>
     <%- include('./layout/header'); -%>
 
@@ -577,8 +584,170 @@
       </picture>
     </div>
 
+    <!-- section5 -->
+    <div class="container">
+      <h3 class="fs-3 fs-lg-1 mb-6 mb-lg-10">好書推薦</h3>
+    </div>
+    <!-- 手機版 Swiper -->
+    <div class="container container-swiper">
+      <div class="d-lg-none">
+        <div class="swiper swiper-good-books">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="book-card bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="text-secondary-2 fs-7">飲食健康</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage (2).png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="text-secondary-2 fs-7">做自己的營養師</p>
+              </a>
+            </div>
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="book-card bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="text-secondary-2 fs-7">運動保健</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage.png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="text-secondary-2 fs-7">運動比你想的還輕鬆</p>
+              </a>
+            </div>
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="book-card bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="text-secondary-2 fs-7">心靈成長</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage (1).png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="text-secondary-2 fs-7">慢老2.0</p>
+              </a>
+            </div>
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="book-card bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="text-secondary-2 fs-7">飲食健康</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage (2).png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="text-secondary-2 fs-7">做自己的營養師</p>
+              </a>
+            </div>
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="book-card bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="text-secondary-2 fs-7">運動保健</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage.png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="text-secondary-2 fs-7">運動比你想的還輕鬆</p>
+              </a>
+            </div>
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="book-card bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="text-secondary-2 fs-7">心靈成長</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage (1).png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="text-secondary-2 fs-7">慢老2.0</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <!-- 載入 Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiperGoodBooks = new Swiper(".swiper-good-books", {
+        slidesPerView: 2.25165,
+        spaceBetween: 8,
+
+        breakpoints: {
+          375: {
+            slidesPerView: 2.45695,
+          },
+
+          412: {
+            slidesPerView: 2.70198,
+          },
+
+          456: {
+            slidesPerView: 2.99337,
+          },
+
+          500: {
+            slidesPerView: 3.28477,
+          },
+
+          540: {
+            slidesPerView: 3.54968,
+          },
+
+          576: {
+            slidesPerView: 3.7086,
+          },
+
+          610: {
+            slidesPerView: 3.93377,
+          },
+
+          768: {
+            slidesPerView: 4.98014,
+          },
+
+          860: {
+            slidesPerView: 5.5894,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

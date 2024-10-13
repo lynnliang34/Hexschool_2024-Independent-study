@@ -208,3 +208,36 @@
     }
   }
 }
+
+// 好書推薦
+// 手機版 Swiper
+.container-swiper {
+  --bs-gutter-x: 0;
+  margin-right: 0;
+
+  @include sm {
+    max-width: 665.5px;
+  }
+
+  @include md {
+    max-width: 867.5px;
+  }
+}
+
+.swiper-good-books {
+  margin-left: 12px;
+
+  @include sm {
+    margin-left: 1.5rem;
+  }
+}
+
+.book-card {
+  width: 143px;
+}
+
+.book {
+  width: 131px;
+  height: 172px;
+  object-fit: cover;
+}
