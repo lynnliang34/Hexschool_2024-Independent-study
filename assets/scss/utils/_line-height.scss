@@ -1,0 +1,10 @@
+.lh-1 {
+  line-height: 1;
+}
+
+// ≤576px 文字行高為 1.2
+.lh-sm-down-1-2 {
+  @media screen and (max-width: 576px) {
+    line-height: 1.2;
+  }
+}
