@@ -208,10 +208,3 @@
     }
   }
 }
-
-// ≤576px 文字行高為 1.2
-.line-height {
-  @media screen and (max-width: 576px) {
-    line-height: 1.2;
-  }
-}
