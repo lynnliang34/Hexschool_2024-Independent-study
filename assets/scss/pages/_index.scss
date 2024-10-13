@@ -7,8 +7,18 @@
         background-position: center;
     }
 
-    .cardText{
-        right:11.3px;
+    .news{
+        .cardText{
+            right:11.3px;
+
+            .cardTitle{
+                letter-spacing: 4px;
+            }
+
+            .cardContent{
+                letter-spacing: 10px;
+            }
+        }
     }
 }
 
@@ -37,6 +47,16 @@
                 height: 8px;
             }
         }
+        
+        .cardTitle{
+            right:11.3px;
+            letter-spacing: 2px;
+        }
+        .cardText{
+            left: 20px;
+            max-width: 280px;
+            padding:6px 11px;
+        }
     }
 }
 
@@ -45,10 +65,23 @@
         .featureCourses{
             .decoLine{
                 height: 12px;
-            &::before{
-                height: 12px;
+                &::before{
+                    height: 12px;
+                }   
             }
-        }
+
+            .cardTitle{
+                letter-spacing: 4px;
+            }
+            .cardText{
+                left: 24px;
+                max-width: 111px;
+                height: 260px;
+                padding:16px 8px;
+                -webkit-writing-mode: vertical-rl;
+                writing-mode: vertical-rl;
+                letter-spacing: 8px;
+            }
         }
     }
 }
