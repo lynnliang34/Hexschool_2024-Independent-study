@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 載入 Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>愉運 Move with Joy</title>
   </head>
+
   <body>
     <%- include('./layout/header'); -%>
 
@@ -577,8 +584,421 @@
       </picture>
     </div>
 
+    <!-- section5 -->
+    <!-- 手機版  -->
+    <div class="d-lg-none">
+      <div class="container">
+        <h3 class="fs-3 mb-6">好書推薦</h3>
+      </div>
+      <!-- 手機版 Swiper -->
+      <div class="container container-swiper">
+        <div class="swiper swiper-good-books">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="book-title fs-7">飲食健康</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage (2).png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="book-title fs-7">做自己的營養師</p>
+              </a>
+            </div>
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="book-title fs-7">運動保健</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage.png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="book-title fs-7">運動比你想的還輕鬆</p>
+              </a>
+            </div>
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="book-title fs-7">心靈成長</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage (1).png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="book-title fs-7">慢老2.0</p>
+              </a>
+            </div>
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="book-title fs-7">飲食健康</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage (2).png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="book-title fs-7">做自己的營養師</p>
+              </a>
+            </div>
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="book-title fs-7">運動保健</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage.png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="book-title fs-7">運動比你想的還輕鬆</p>
+              </a>
+            </div>
+            <div class="swiper-slide book-card">
+              <a
+                href="#"
+                class="bg-primary-1 rounded d-flex flex-column align-items-center"
+              >
+                <p class="book-title fs-7">心靈成長</p>
+
+                <div class="bg-white rounded p-1 m-1">
+                  <img
+                    src="/assets/images/books/getImage (1).png"
+                    alt=""
+                    class="book"
+                  />
+                </div>
+                <p class="book-title fs-7">慢老2.0</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 電腦版 Swiper -->
+    <div class="bg-primary-2 d-none d-lg-block">
+      <div class="container position-relative">
+        <h3 class="fs-1 pt-3 mb-10">好書推薦</h3>
+        <div class="px-13">
+          <div class="swiper swiper-good-books-lg pt-9 pb-35">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide book-card slide-padding">
+                <a href="#" class="good-book position-relative">
+                  <h5
+                    class="book-category fs-2 fw-bold lh-1-2 vertical-rl bg-white m-0 px-3 pt-2 pb-1 rounded letter-spacing"
+                  >
+                    飲食健康
+                  </h5>
+                  <div class="bg-white rounded p-1 m-1">
+                    <img
+                      src="/assets/images/books/getImage (2).png"
+                      alt=""
+                      class="book"
+                    />
+                  </div>
+                  <div
+                    class="book-intro vertical-rl letter-spacing-1 bg-white rounded px-4 py-5"
+                  >
+                    <h6 class="fs-4 fw-bold m-0 ms-5">做自己的營養師</h6>
+                    <p class="book-intro-text fs-7 lh-1-8 m-0">
+                      健康與日常飲食密切相關依每個人的 <br />
+                      身高體重與身體狀況，一日需要的熱 <br />
+                      量與六大類營養素皆不同，該怎麼計 <br />
+                      算自每日的攝取量？面對各種食物， <br />
+                      又該如何簡單判斷每一餐該吃多少？
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide book-card slide-padding">
+                <a href="#" class="good-book position-relative">
+                  <h5
+                    class="book-category fs-2 fw-bold lh-1-2 vertical-rl bg-white m-0 px-3 pt-2 pb-1 rounded letter-spacing"
+                  >
+                    運動保健
+                  </h5>
+
+                  <div class="bg-white rounded p-1 m-1">
+                    <img
+                      src="/assets/images/books/getImage.png"
+                      alt=""
+                      class="book"
+                    />
+                  </div>
+                  <div
+                    class="book-intro vertical-rl letter-spacing-1 bg-white rounded px-4 py-5"
+                  >
+                    <h6 class="fs-4 fw-bold m-0 ms-5">運動比你想的還輕鬆</h6>
+                    <p class="book-intro-text fs-7 lh-1-8 m-0">
+                      融入居家空間，兼顧方便性與安全性 <br />
+                      的律動運動，突破年齡、體能狀態、 <br />
+                      時空環境的「無差別待遇」、無壓、<br />
+                      無痛、<span class="horizontal-tb letter-spacing-0 lh-1-2"
+                        >0</span
+                      >運動傷害，讓負擔變享受，<br />
+                      不僅合乎人性，更能打破的惰性！
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide book-card slide-padding">
+                <a href="#" class="good-book position-relative">
+                  <h5
+                    class="book-category fs-2 fw-bold lh-1-2 vertical-rl bg-white m-0 px-3 pt-2 pb-1 rounded letter-spacing"
+                  >
+                    心靈成長
+                  </h5>
+
+                  <div class="bg-white rounded p-1 m-1">
+                    <img
+                      src="/assets/images/books/getImage (1).png"
+                      alt=""
+                      class="book"
+                    />
+                  </div>
+                  <div
+                    class="book-intro vertical-rl letter-spacing-1 bg-white rounded px-4 py-5"
+                  >
+                    <h6 class="fs-4 fw-bold m-0 ms-5">
+                      慢老 <span class="horizontal-tb">2<br />.<br />0</span>
+                    </h6>
+                    <p class="book-intro-text fs-7 lh-1-8 m-0">
+                      <span class="horizontal-tb letter-spacing-0 lh-1-2"
+                        >30</span
+                      >多歲就渾身疼痛？
+                      <span class="horizontal-tb letter-spacing-0 lh-1-2"
+                        >40</span
+                      >多歲就忘東忘 <br />
+                      西 ？
+                      <span class="horizontal-tb letter-spacing-0 lh-1-2"
+                        >50</span
+                      >多歲就全身衰弱 ？慢老
+                      <span class="horizontal-tb letter-spacing-0 lh-1-2"
+                        >2.0</span
+                      >， <br />
+                      升級六大科學的新主張、新觀點，幫 <br />
+                      助你聰明應對各種老化痛點。你可能 <br />
+                      活得比想像更久，但你準備好了嗎？
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide book-card slide-padding">
+                <a href="#" class="good-book position-relative">
+                  <h5
+                    class="book-category fs-2 fw-bold lh-1-2 vertical-rl bg-white m-0 px-3 pt-2 pb-1 rounded letter-spacing"
+                  >
+                    飲食健康
+                  </h5>
+                  <div class="bg-white rounded p-1 m-1">
+                    <img
+                      src="/assets/images/books/getImage (2).png"
+                      alt=""
+                      class="book"
+                    />
+                  </div>
+                  <div
+                    class="book-intro vertical-rl letter-spacing-1 bg-white rounded px-4 py-5"
+                  >
+                    <h6 class="fs-4 fw-bold m-0 ms-5">做自己的營養師</h6>
+                    <p class="book-intro-text fs-7 lh-1-8 m-0">
+                      健康與日常飲食密切相關依每個人的 <br />
+                      身高體重與身體狀況，一日需要的熱 <br />
+                      量與六大類營養素皆不同，該怎麼計 <br />
+                      算自每日的攝取量？面對各種食物， <br />
+                      又該如何簡單判斷每一餐該吃多少？
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide book-card slide-padding">
+                <a href="#" class="good-book position-relative">
+                  <h5
+                    class="book-category fs-2 fw-bold lh-1-2 vertical-rl bg-white m-0 px-3 pt-2 pb-1 rounded letter-spacing"
+                  >
+                    運動保健
+                  </h5>
+
+                  <div class="bg-white rounded p-1 m-1">
+                    <img
+                      src="/assets/images/books/getImage.png"
+                      alt=""
+                      class="book"
+                    />
+                  </div>
+                  <div
+                    class="book-intro vertical-rl letter-spacing-1 bg-white rounded px-4 py-5"
+                  >
+                    <h6 class="fs-4 fw-bold m-0 ms-5">運動比你想的還輕鬆</h6>
+                    <p class="book-intro-text fs-7 lh-1-8 m-0">
+                      融入居家空間，兼顧方便性與安全性 <br />
+                      的律動運動，突破年齡、體能狀態、 <br />
+                      時空環境的「無差別待遇」、無壓、<br />
+                      無痛、<span class="horizontal-tb letter-spacing-0 lh-1-2"
+                        >0</span
+                      >運動傷害，讓負擔變享受，<br />
+                      不僅合乎人性，更能打破的惰性！
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide book-card slide-padding">
+                <a href="#" class="good-book position-relative">
+                  <h5
+                    class="book-category fs-2 fw-bold lh-1-2 vertical-rl bg-white m-0 px-3 pt-2 pb-1 rounded letter-spacing"
+                  >
+                    心靈成長
+                  </h5>
+
+                  <div class="bg-white rounded p-1 m-1">
+                    <img
+                      src="/assets/images/books/getImage (1).png"
+                      alt=""
+                      class="book"
+                    />
+                  </div>
+                  <div
+                    class="book-intro vertical-rl letter-spacing-1 bg-white rounded px-4 py-5"
+                  >
+                    <h6 class="fs-4 fw-bold m-0 ms-5">
+                      慢老 <span class="horizontal-tb">2<br />.<br />0</span>
+                    </h6>
+                    <p class="book-intro-text fs-7 lh-1-8 m-0">
+                      <span class="horizontal-tb letter-spacing-0 lh-1-2"
+                        >30</span
+                      >多歲就渾身疼痛？
+                      <span class="horizontal-tb letter-spacing-0 lh-1-2"
+                        >40</span
+                      >多歲就忘東忘 <br />
+                      西 ？
+                      <span class="horizontal-tb letter-spacing-0 lh-1-2"
+                        >50</span
+                      >多歲就全身衰弱 ？慢老
+                      <span class="horizontal-tb letter-spacing-0 lh-1-2"
+                        >2.0</span
+                      >， <br />
+                      升級六大科學的新主張、新觀點，幫 <br />
+                      助你聰明應對各種老化痛點。你可能 <br />
+                      活得比想像更久，但你準備好了嗎？
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper navigation -->
+        <div class="swiper-book-next">
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        </div>
+        <div class="swiper-book-prev">
+          <span class="material-symbols-outlined ps-3"> arrow_back_ios</span>
+        </div>
+      </div>
+    </div>
+    <div class="mb-20 mb-lg-36"></div>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <!-- 載入 Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // 手機版 Swiper
+      const swiperGoodBooks = new Swiper(".swiper-good-books", {
+        slidesPerView: 2.25165,
+        spaceBetween: 8,
+
+        breakpoints: {
+          375: {
+            slidesPerView: 2.45695,
+          },
+
+          412: {
+            slidesPerView: 2.70198,
+          },
+
+          456: {
+            slidesPerView: 2.99337,
+          },
+
+          500: {
+            slidesPerView: 3.28477,
+          },
+
+          540: {
+            slidesPerView: 3.54968,
+          },
+
+          576: {
+            slidesPerView: 3.7086,
+          },
+
+          610: {
+            slidesPerView: 3.93377,
+          },
+
+          768: {
+            slidesPerView: 4.98014,
+          },
+
+          860: {
+            slidesPerView: 5.5894,
+          },
+        },
+      });
+
+      // 電腦版 Swiper
+      const swiperGoodBooksLg = new Swiper(".swiper-good-books-lg", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+
+        navigation: {
+          nextEl: ".swiper-book-next",
+          prevEl: ".swiper-book-prev",
+        },
+      });
+    </script>
+    <!-- <script>
+      // 選取所有含有 .book-intro-text 類的元素
+      const bookIntros = document.querySelectorAll(".book-intro-text");
+
+      // 遍歷每個元素，對它們進行操作
+      bookIntros.forEach(function (bookIntro) {
+        // 取得每個元素的文字內容，並去除多餘空白
+        let text = bookIntro.textContent.trim().replace(/\s+/g, "");
+
+        // 將每16字元加上 <br>
+        let formattedText = text.replace(/(.{16})/g, "$1<br>");
+
+        // 更新 HTML 內容，插入 <br>
+        bookIntro.innerHTML = formattedText;
+      });
+    </script> -->
   </body>
 </html>
