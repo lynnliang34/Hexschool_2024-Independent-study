@@ -20,6 +20,8 @@ $custom-spacers: (
   // 36
   10: $spacer * 2.5,
   // 40
+  11: $spacer * 2.75,
+  // 44
   12: $spacer * 3,
   // 48
   13: $spacer * 3.25,
@@ -42,6 +44,10 @@ $custom-spacers: (
   // 120
   35: $spacer * 8.75,
   // 140
+  36: $spacer * 9,
+  // 144
+  46: $spacer * 11.5,
+  // 184
 );
 
 $spacers: map-merge($spacers, $custom-spacers);
