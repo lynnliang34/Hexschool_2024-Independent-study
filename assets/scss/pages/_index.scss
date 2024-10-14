@@ -1,3 +1,45 @@
+// 橘色分隔裝飾線開始
+.decoLine{
+    height: 8px;
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(/assets/images/line/標題裝飾.png);
+        width: 100%;
+        height: 8px;
+    }
+}
+
+@include lg{
+    .decoLine{
+        height: 12px;
+        &::before{
+            height: 12px;
+        }   
+    }
+
+}
+// 橘色分隔裝飾線結束
+
+// 課程卡片圖片hover效果開始
+
+.courseLink{
+    img {
+    object-fit: cover;
+    transition: 0.5s;
+    z-index: 1;
+    }
+
+    &:hover{
+        img{
+        transform: scale(1.2);
+        }
+    }
+}
+// 課程卡片圖片hover效果結束
+
+
+// 首頁banner開始
 .index{
     .indexBanner{
         padding-top: 44px;
@@ -5,20 +47,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-    }
-
-    .news{
-        .cardText{
-            right:11.3px;
-
-            .cardTitle{
-                letter-spacing: 4px;
-            }
-
-            .cardContent{
-                letter-spacing: 10px;
-            }
-        }
     }
 }
 
@@ -34,21 +62,32 @@
         }
     }
 }
+// 首頁banner結束
 
+// 首頁推薦課程開始
 .index{
-    .featureCourses{
-        .decoLine{
-            height: 8px;
-            &::before{
-                content: "";
-                position: absolute;
-                background-image: url(/assets/images/line/標題裝飾.png);
-                width: 100%;
-                height: 8px;
+    .news{
+        .cardText{
+            right:11.3px;
+            z-index: 5;
+
+            .cardTitle{
+                letter-spacing: 4px;
+            }
+
+            .cardContent{
+                letter-spacing: 10px;
             }
         }
-        
+    }
+}
+// 首頁推薦課程結束
+
+// 首頁精選課程開始
+.index{
+    .featureCourses{
         .cardTitle{
+            top:28px;
             right:11.3px;
             letter-spacing: 2px;
         }
@@ -63,13 +102,6 @@
 @include lg{
     .index{
         .featureCourses{
-            .decoLine{
-                height: 12px;
-                &::before{
-                    height: 12px;
-                }   
-            }
-
             .cardTitle{
                 letter-spacing: 4px;
             }
@@ -85,3 +117,99 @@
         }
     }
 }
+// 首頁精選課程結束
+
+// 首頁知識分享開始
+.index{
+    .knowledgeSharing{
+        .cardTitle{
+            letter-spacing: 4px;
+            right:12px;
+        }
+
+        .cardText{
+            max-width: 220px;
+            height: 252px;
+            text-orientation: upright;
+            letter-spacing: 2px;
+        }
+
+        .cardImg{
+            object-fit: cover;
+            height: 360px;
+        }
+
+        .cardImgPosition{
+            object-position: center;
+        }
+
+        .moreIcon{
+            transform: rotate(270deg);
+            margin-right: -6px;
+            margin-left: 2px;
+        }
+
+        .learn-more-mobile:hover{
+            font-weight: 700;
+            .moreIcon{
+                transform: scale(1.1) rotate(270deg);
+            }
+        }
+
+        .learn-more-H{
+            width: 24px;
+            height: 92px;
+        }
+    }
+}
+
+@include md{
+    .index{
+        .knowledgeSharing{
+            .cardTitle{
+                right:12px !important;
+            }
+
+            .cardImgPosition{
+                object-position: right;
+            }
+
+            .moreIcon{
+                transform: rotate(0deg);
+                margin-right: 0px;
+                margin-left: 0px;
+            }
+
+            .learn-more-H:hover{
+                path{
+                    fill:#fff;
+                }
+            }
+        }
+    }
+}
+
+@include lg{
+    .index{
+        .knowledgeSharing{
+            .cardTitle{
+                right:24px !important;
+            }
+
+            .cardImg{
+                height: 380px;
+            }
+
+            
+        }
+    }
+}
+// 首頁知識分享結束
+
+// 首頁學員分享開始
+
+// 首頁學員分享結束
+
+// 首頁課程照片開始
+
+// 首頁課程照片結束
