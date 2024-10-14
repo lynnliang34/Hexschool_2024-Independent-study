@@ -232,8 +232,19 @@
   }
 }
 
+.book-title {
+  color: $secondary-2;
+  transition: 0.3s;
+}
+
 .book-card {
   width: 143px;
+
+  &:hover {
+    .book-title {
+      color: $primary;
+    }
+  }
 
   @include lg {
     width: 382px;
