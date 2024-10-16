@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>愉運 Move with Joy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -343,12 +344,95 @@
         </div>
       </section>
       <!-- 學員分享 -->
-      <section class="studentComment"></section>
+      <section class="studentComment">
+        <!-- 裝飾線及精選課程標題 -->
+        <div class="container mb-0 mb-lg-10 ">
+          <div class="position-relative decoLine"></div>
+          <h3 class="fs-lg-1 mt-2 mt-lg-4">學員分享</h3>
+        </div>
+        <!-- 學員分享對話框 -->
+        <div class="commentBackground">
+          <div class="container position-relative vh-100">
+            <div class="speech-bubble"
+              style="--bubble-color: #edf6f9; --bubble-border-color: #007f7f; --triangle-position: 50%; --bubble-top: 10%; --bubble-left: 10%;">
+              <div class="text">
+                社群氛圍非常好
+              </div>
+            </div>
+
+            <div class="speech-bubble"
+              style="--bubble-color: #fff1e6; --bubble-border-color: #ff6f61; --triangle-position: 30%; --bubble-top: 30%; --bubble-left: 20%;">
+              <div class="text">
+                教練們都非常專業和熱情，讓我在這裡感覺很受歡迎。
+              </div>
+            </div>
+
+            <div class="speech-bubble"
+              style="--bubble-color: #ffffff; --bubble-border-color: #007f7f; --triangle-position: 80%; --bubble-top: 50%; --bubble-right: 10%;">
+              <div class="text">
+                教練非常有耐心，給了我很多有用的建議，讓我的運動效果顯著提升。
+              </div>
+            </div>
+
+            <div class="speech-bubble"
+              style="--bubble-color: #ffffff; --bubble-border-color: #007f7f; --triangle-position: 20%; --bubble-top: 60%; --bubble-left: 15%;">
+              <div class="text">
+                教練非常專業
+              </div>
+            </div>
+
+            <div class="speech-bubble"
+              style="--bubble-color: #f9f4ef; --bubble-border-color: #ff6f61; --triangle-position: 20%; --bubble-bottom: 15%; --bubble-left: 5%;">
+              <div class="text">
+                重新找回了年輕時的活力
+              </div>
+            </div>
+
+            <div class="speech-bubble"
+              style="--bubble-color: #e0f7fa; --bubble-border-color: #007f7f; --triangle-position: 50%; --bubble-bottom: 5%; --bubble-right: 20%;">
+              <div class="text">
+                認識了很多新朋友，生活變得更加充實有趣。
+              </div>
+            </div>
+          </div>
+      </section>
       <!-- 課程照片 -->
-      <section class="photoSwiper"></section>
+      <section class="photoSwiper mt-10 mb-11 mb-lg-21">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide ">
+              <img class="rounded" src="../assets/images/17925.png" alt="older-stretching">
+            </div>
+            <div class="swiper-slide">
+              <img class="rounded" src="../assets/images/1520.png" alt="older-chatting">
+            </div>
+            <div class="swiper-slide">
+              <img class="rounded" src="../assets/images/2148694276.png" alt="older-walking">
+            </div>
+            <div class="swiper-slide">
+              <img class="rounded" src="../assets/images/istockphoto-1898253813-612x612.png" alt="older-yoga">
+            </div>
+            <div class="swiper-slide">
+              <img class="rounded" src="../assets/images/17925.png" alt="older-stretching">
+            </div>
+            <div class="swiper-slide">
+              <img class="rounded" src="../assets/images/1520.png" alt="older-chatting">
+            </div>
+            <div class="swiper-slide">
+              <img class="rounded" src="../assets/images/2148694276.png" alt="older-walking">
+            </div>
+            <div class="swiper-slide">
+              <img class="rounded" src="../assets/images/istockphoto-1898253813-612x612.png" alt="older-yoga">
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <%- include('./layout/footer'); -%>
 
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script type="module" src="../main.js"></script>
 </body>
 
