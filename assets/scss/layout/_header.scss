@@ -48,7 +48,6 @@
   }
 
   .search-form {
-    display: none;
     position: absolute;
     top: 9px;
     right: 13px;
@@ -124,25 +123,11 @@
     width: 24px;
     height: 24px;
     fill: $neutral-1;
-    transform: rotate(-0.25turn);
     transition: 0.15s;
   }
 
-  .modal-link-1:active,
-  .modal-link-1:focus {
-    .modal-link-arrow {
-      transform: rotate(0);
-    }
-  }
-
-  .modal-link-1ist {
-    display: none;
-  }
-
-  .modal-link-1:active + .modal-link-1ist,
-  .modal-link-1:focus + .modal-link-1ist,
-  .modal-link-1ist:hover {
-    display: block;
+  .rotate {
+    transform: rotate(-0.25turn);
   }
 
   .modal-link-2 {
