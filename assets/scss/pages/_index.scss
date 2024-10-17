@@ -216,66 +216,109 @@
             background-repeat: no-repeat; max-width: 1470px;
             height: 100%;
         }
-
-        :root {
-            --bubble-color: #fefae0;
-            --bubble-border-color: #c4c4c4;
-            --triangle-position: 20%;
-            --bubble-top: auto;
-            --bubble-right: auto;
-            --bubble-bottom: auto;
-            --bubble-left: auto;
-        }
         
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            position: relative;
+        .dialogText{
+            z-index: 5;
+            transition: linear 0.3s; 
         }
 
-        
-        .speech-bubble {
-            position: absolute;
-            background: var(--bubble-color);
-            border: 2px solid var(--bubble-border-color);
-            border-radius: 10px;
-            padding: 20px;
-            width: 300px;
-            color: #333;
-            top: var(--bubble-top);
-            right: var(--bubble-right);
-            bottom: var(--bubble-bottom);
-            left: var(--bubble-left);
+        .dialogBox{
+            z-index: 1;
+            transition: ease 0.3s; 
+        }
+
+        .speechBubble1{
+            width: 451px;
+            left: 108.5px;
+
+            .dialogText{
+                left: 29.8px;
+                top: 60px;
+            }
+
+            &:hover{
+                .dialogText{
+                    color: #fff !important;
+                }
+
+                .dialogBox{
+                    path{
+                        fill:#487181;
+                    }
+                }
+            }
+
+            
+        }
+
+        .speechBubble2{
+            width: 638px;
+            left: 0px;
+            top:436px;
+
+            .dialogText{
+                left: 37.1px;
+                top: 75px;
+            }
+
+            &:hover{
+                .dialogText{
+                    color: #fff !important;
+                }
+                .dialogBox{
+                    path{
+                        fill:#487181;
+                    }
+                }
+            }
+        }
+
+        .speechBubble3{
+            width: 62px;
+            left: 670px;
+            top:371px;
+
+            .dialogText{
+                left:8px;
+                top: 28px;
+                letter-spacing: 6px;
+            }
+
+            &:hover{
+                .dialogText{
+                    color: #fff !important;
+                }
+                .dialogBox{
+                    path{
+                        fill:#487181;
+                    }
+                }
+            }
+        }
+
+        .speechBubble3{
+            width: 62px;
+            left: 670px;
+            top:371px;
+
+            .dialogText{
+                left:8px;
+                top: 28px;
+                letter-spacing: 6px;
+            }
+
+            &:hover{
+                .dialogText{
+                    color: #fff !important;
+                }
+                .dialogBox{
+                    path{
+                        fill:#487181;
+                    }
+                }
+            }
         }
         
-        .speech-bubble:before {
-            content: '';
-            position: absolute;
-            bottom: 100%;
-            left: var(--triangle-position);
-            border-width: 0 12px 12px 12px;
-            border-style: solid;
-            border-color: transparent transparent var(--bubble-border-color) transparent;
-        }
-        
-        .speech-bubble:after {
-            content: '';
-            position: absolute;
-            bottom: 100%;
-            left: var(--triangle-position);
-            margin-left: 2px;
-            border-width: 0 10px 10px 10px;
-            border-style: solid;
-            border-color: transparent transparent var(--bubble-color) transparent;
-        }
-        
-        .text {
-            font-size: 16px;
-            color: #333;
-        }
     }
 }
 
