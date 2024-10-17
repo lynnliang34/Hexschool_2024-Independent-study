@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s;
+  transition: 0.15s;
 
   &:hover {
     color: $primary;
@@ -31,14 +31,14 @@
   align-items: center;
 
   h4 {
-    transition: 0.3s;
+    transition: 0.15s;
   }
 
   .icon {
     width: 40px;
     height: 40px;
     fill: $neutral-1;
-    transition: 0.3s;
+    transition: 0.15s;
   }
 
   &:hover {
@@ -234,7 +234,7 @@
 
 .book-title {
   color: $secondary-2;
-  transition: 0.3s;
+  transition: 0.15s;
 }
 
 .book-card {
@@ -275,11 +275,11 @@
   bottom: -119.52px;
   width: 208px;
   border: 1px solid $secondary-2;
-  transition: 0.3s;
+  transition: 0.15s;
 
   h6 {
     color: $secondary-2;
-    transition: 0.3s;
+    transition: 0.15s;
   }
 }
 
@@ -306,11 +306,11 @@
 
 .book-category {
   color: $secondary-2;
-  transition: 0.3s;
+  transition: 0.15s;
 }
 
 .good-book {
-  transition: 0.3s;
+  transition: 0.15s;
 }
 
 .good-book:hover {
@@ -340,7 +340,7 @@
   align-items: center;
   position: absolute;
   z-index: 1;
-  transition: 0.3s;
+  transition: 0.15s;
 
   .material-symbols-outlined {
     font-size: 30px;
