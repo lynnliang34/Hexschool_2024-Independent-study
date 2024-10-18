@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>愉運 Move with Joy</title>
-    <script type="module" crossorigin src="/Hexschool_2024-Independent-study/assets/main-e6cad44b.js"></script>
-    <link rel="stylesheet" href="/Hexschool_2024-Independent-study/assets/main-6ca9d0e8.css">
+    <script type="module" crossorigin src="/Hexschool_2024-Independent-study/assets/main-740bb748.js"></script>
+    <link rel="stylesheet" href="/Hexschool_2024-Independent-study/assets/main-12edb2bc.css">
   </head>
   <body>
     <!-- <div class="header">
@@ -20,6 +20,7 @@
   <div class="container">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
+        <!-- Logo -->
         <a class="me-lg-5 me-xl-10" href="index.html">
           <div>
             <svg
@@ -80,21 +81,43 @@
                   <rect width="100" height="36.25" fill="white" />
                 </clipPath>
               </defs>
-            </svg></div
-        ></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-          <div class="d-flex justify-content-between align-items-center w-100">
+            </svg>
+          </div>
+        </a>
+        <!-- 手機版 -->
+        <div class="d-flex">
+          <!-- search -->
+          <!-- 圖示 -->
+          <button data-bs-auto-close="outside" class="search-icon d-lg-none">
+            <div>
+              <svg
+                class="search-svg"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_94_4564)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.0833 7.75C10.5855 7.75 7.75 10.5855 7.75 14.0833C7.75 17.5811 10.5855 20.4167 14.0833 20.4167C17.5811 20.4167 20.4167 17.5811 20.4167 14.0833C20.4167 10.5855 17.5811 7.75 14.0833 7.75ZM5.75 14.0833C5.75 9.48096 9.48096 5.75 14.0833 5.75C18.6857 5.75 22.4167 9.48096 22.4167 14.0833C22.4167 18.6857 18.6857 22.4167 14.0833 22.4167C9.48096 22.4167 5.75 18.6857 5.75 14.0833Z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.5553 18.5553C18.9459 18.1648 19.579 18.1648 19.9696 18.5553L23.9571 22.5428C24.3476 22.9334 24.3476 23.5665 23.9571 23.9571C23.5665 24.3476 22.9334 24.3476 22.5428 23.9571L18.5553 19.9696C18.1648 19.579 18.1648 18.9459 18.5553 18.5553Z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_94_4564">
+                    <rect width="30" height="30" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </button>
+          <!-- 搜尋框 -->
+          <div class="search-form d-lg-none d-none">
             <div class="position-relative">
               <form>
                 <input
@@ -104,7 +127,173 @@
                   aria-label="Search"
                 />
               </form>
-              <div class="search-icon position-absolute">
+              <div class="search-icon-lg position-absolute">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_94_4564)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.0833 7.75C10.5855 7.75 7.75 10.5855 7.75 14.0833C7.75 17.5811 10.5855 20.4167 14.0833 20.4167C17.5811 20.4167 20.4167 17.5811 20.4167 14.0833C20.4167 10.5855 17.5811 7.75 14.0833 7.75ZM5.75 14.0833C5.75 9.48096 9.48096 5.75 14.0833 5.75C18.6857 5.75 22.4167 9.48096 22.4167 14.0833C22.4167 18.6857 18.6857 22.4167 14.0833 22.4167C9.48096 22.4167 5.75 18.6857 5.75 14.0833Z"
+                      fill="#484848"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.5553 18.5553C18.9459 18.1648 19.579 18.1648 19.9696 18.5553L23.9571 22.5428C24.3476 22.9334 24.3476 23.5665 23.9571 23.9571C23.5665 24.3476 22.9334 24.3476 22.5428 23.9571L18.5553 19.9696C18.1648 19.579 18.1648 18.9459 18.5553 18.5553Z"
+                      fill="#484848"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_94_4564">
+                      <rect width="30" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- list -->
+          <button
+            class="list d-lg-none"
+            data-bs-toggle="modal"
+            data-bs-target="#menuModal"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+        <!-- 手機版 modal -->
+        <div
+          class="modal fade"
+          id="menuModal"
+          tabindex="-1"
+          aria-labelledby="menuModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog h-100">
+            <div class="modal-content h-100">
+              <div class="modal-body">
+                <div class="ms-12">
+                  <div class="mb-6">
+                    <a class="modal-link-1" href="#"
+                      >關於我們
+                      <span>
+                        <svg
+                          class="modal-link-arrow rotate ms-3 mb-1"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M22 7.45946L12 18L2 7.45946L4.33333 5L12 13.0811L19.6667 5L22 7.45946Z"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="modal-link-1ist d-none">
+                      <a class="modal-link-2" href="#">師資 </a>
+                      <a class="modal-link-2" href="#">交通資訊 </a>
+                    </div>
+                  </div>
+                  <div class="mb-6">
+                    <a class="modal-link-1" href="#"
+                      >探索課程
+                      <span>
+                        <svg
+                          class="modal-link-arrow rotate ms-3 mb-1"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M22 7.45946L12 18L2 7.45946L4.33333 5L12 13.0811L19.6667 5L22 7.45946Z"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="modal-link-1ist d-none">
+                      <a class="modal-link-2" href="#">運動保健 </a>
+                      <a class="modal-link-2" href="#">心靈成長 </a>
+                      <a class="modal-link-2" href="#">生活技能 </a>
+                      <a class="modal-link-2" href="#">社區活動 </a>
+                    </div>
+                  </div>
+                  <div class="mb-6">
+                    <a class="modal-link-1" href="#"
+                      >知識分享
+                      <span>
+                        <svg
+                          class="modal-link-arrow rotate ms-3 mb-1"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M22 7.45946L12 18L2 7.45946L4.33333 5L12 13.0811L19.6667 5L22 7.45946Z"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="modal-link-1ist d-none">
+                      <a class="modal-link-2" href="#">運動 </a>
+                      <a class="modal-link-2" href="#">飲食 </a>
+                      <a class="modal-link-2" href="#">養生 </a>
+                      <a class="modal-link-2" href="#">醫療 </a>
+                      <a class="modal-link-2" href="#">癌症 </a>
+                      <a class="modal-link-2" href="#">居家 </a>
+                    </div>
+                  </div>
+                  <div class="mb-6">
+                    <a class="modal-link-1" href="#"
+                      >活動照片
+                      <span>
+                        <svg
+                          class="modal-link-arrow rotate ms-3 mb-1"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M22 7.45946L12 18L2 7.45946L4.33333 5L12 13.0811L19.6667 5L22 7.45946Z"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="modal-link-1ist d-none">
+                      <a class="modal-link-2" href="#">講座 </a>
+                      <a class="modal-link-2" href="#">社團 </a>
+                      <a class="modal-link-2" href="#">運動會 </a>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <a class="modal-link-3 me-2" href="#"> 註冊 </a>
+                    <a class="modal-link-3" href="#"> 登入 </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 電腦版 -->
+        <div class="d-none d-lg-block w-100">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="position-relative">
+              <form>
+                <input
+                  class="search"
+                  type="search"
+                  placeholder="搜尋有氧課程"
+                  aria-label="Search"
+                />
+              </form>
+              <div class="search-icon-lg position-absolute">
                 <svg
                   width="30"
                   height="30"
@@ -405,6 +594,12 @@
     ></a>
   </div>
 </footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+  crossorigin="anonymous"
+></script>
 
     
   </body>
