@@ -34,6 +34,15 @@
   text-overflow: ellipsis;
 }
 
+// 限制顯示6行
+.up-to-6-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 // lg 以上，限制顯示2行
 .up-to-2-lines-lg {
   @include lg {
@@ -59,6 +68,17 @@
 // lg 以上，限制顯示4行
 .up-to-4-lines-lg {
   @include lg {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// xl 以上，限制顯示4行
+.up-to-4-lines-xl {
+  @include xl {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
