@@ -5,6 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>愉運 Move with Joy</title>
+  <style>
+    .button-grid2 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px; /* 按鈕之間的間距 */
+      max-width: 800px; /* 調整整體寬度 */
+      margin: auto; /* 置中 */
+  }
+
+  .explore-labal2 {
+      flex: 1; /* 讓按鈕寬度相同 */
+      margin-bottom: 10px; /* 調整每行按鈕之間的上下間距 */
+  }
+
+  @media (max-width: 768px) { /* 當螢幕寬度小於768px時 */
+      .button-grid2 {
+          grid-template-columns: repeat(2, 1fr); /* 兩列 */
+      }
+  }
+</style>
   </head>
   <body>
 
@@ -284,8 +304,30 @@
   <h3 class="fs-3 fs-lg-1 mb-6 mb-lg-10">探索其他領域</h3>
 </div>
 
- 
+<!-- 帶圖片的按鈕 -->
 
+<div class="container button-grid2">
+  <a class="btn btn-primary-2 explore-labals explore-labal2 me-2" href="#" role="button">音樂</a>
+  <a class="btn btn-primary-2 explore-labals explore-labal2 me-2" href="#" role="button">語言</a>
+  <a class="btn btn-primary-2 explore-labals explore-labal2 me-2" href="#" role="button">攝影</a>
+  <a class="btn btn-primary-2 explore-labals explore-labal2 me-2" href="#" role="button">藝術</a>
+  <a class="btn btn-primary-2 explore-labals explore-labal2 me-2" href="#" role="button">設計</a>
+
+  <div style="grid-column: span 5; text-align: center;"> <!-- 中間的空隙 -->
+      <div style="height: 20px;"></div> <!-- 這裡可以調整空隙的高度 -->
+  </div>
+
+  <a class="btn btn-primary-2 explore-labals explore-labal2 me-2" href="#" role="button">行銷</a>
+  <a class="btn btn-primary-2 explore-labals explore-labal2 me-2" href="#" role="button">程式</a>
+  <a class="btn btn-primary-2 explore-labals explore-labal2 me-2" href="#" role="button">投資理財</a>
+  <a class="btn btn-primary-2 explore-labals explore-labal2 me-2" href="#" role="button">職場技能</a>
+  <a class="btn btn-primary-2 explore-labals explore-labal2 me-2" href="#" role="button">手做</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
     <%- include('./layout/footer'); -%>
      <script type="module" src="../main.js"></script>
   </body>
