@@ -8,7 +8,61 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是詳細課程內容</h1>
+    <!-- section1 -->
+    <div class="container">
+      <!-- 分隔線 -->
+      <picture>
+        <source
+          srcset="/assets/images/dividers/divider-sm.png"
+          media="(max-width: 576px)"
+          class="mt-4 mb-2"
+        />
+        <img
+          src="/assets/images/dividers/divider-lg.png"
+          alt=""
+          class="d-lg-none"
+        />
+      </picture>
+
+      <h1 class="fs-3 fs-lg-1 mt-lg-12">輕鬆有氧運動</h1>
+      <p class="fs-7 fs-lg-5 mt-2 mt-lg-4">
+        專為中老年人設計,涵蓋柔軟舒展和簡單動作,旨在幫助提升身體靈活性和柔韌性。這個課程通過輕絲的運動,增強關節活動範圍,促進血液循環,
+        並改善整體健康。每天早晨進行晨間操,不僅能喚醒身體,還能提升精神狀態,使老年人更有活力地迎接一天的挑戰,改善生活品質,維持健康生活方式。
+      </p>
+
+      <!-- 手機版課程介紹 -->
+      <div class="d-lg-none border border-secondary rounded my-6 p-2">
+        <h2 class="fs-4 text-secondary mb-2">運動保健</h2>
+        <img
+          src="/assets/images/expressive-senior-man-posing-outdoor.png"
+          alt=""
+          class="object-fit-cover rounded-20 course-img mb-2"
+        />
+        <p class="fs-7 mb-2">
+          1.課程時長:每次課程約一小時,設計以輕松、有效的伸展和柔軟運動為主,適合早晨進行以啟動一天的活力。<br />
+          2.上課時間:每週一、三、五早上9:00至10:00 <br />
+          3.適用年齡:50歲以上的中老年人 <br />
+          4.身體狀況要求:課程設計考慮到參加者的身體狀況,無需特別的身體條件,僅需具備基本的運動能力,如能站立和進行輕度運動
+          <br />
+          5.場地與設備:課程於館内瑜珈教室進行,提供舒適的活動空間。參加者建議穿著舒適的運動服裝,請自備水壺,本館提供瑜伽墊供使用。
+        </p>
+        <button class="btn btn-secondary text-white w-100">
+          預約課程
+          <svg
+            class="course-arrow"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.72973 1L9 6L3.72973 11L2.5 9.83333L6.54054 6L2.5 2.16667L3.72973 1Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
