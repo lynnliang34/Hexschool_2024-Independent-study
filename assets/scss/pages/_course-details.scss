@@ -183,3 +183,21 @@
     max-height: 212px;
   }
 }
+
+// section4
+.teacher-card {
+  background-color: #f6f4e9;
+  border: 2px solid #e79776;
+}
+
+.teacher-img {
+  width: 94px;
+  height: 94px;
+  border-radius: 100%;
+  object-fit: cover;
+
+  @include lg {
+    width: 250px;
+    height: 250px;
+  }
+}
