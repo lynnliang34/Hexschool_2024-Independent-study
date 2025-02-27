@@ -1,3 +1,5 @@
+// section1
+
 .course-img {
   height: 240px;
   width: 100%;
@@ -30,7 +32,6 @@
 
 .course-info {
   margin: 320px 0 0 -70px;
-
   max-width: 596px;
   border-radius: 20px;
   border: 2px solid #84ccc9;
@@ -49,5 +50,57 @@
   @include lg {
     width: 164px;
     height: 44px;
+  }
+}
+
+// section2
+.features-img {
+  height: 240px;
+  width: 100%;
+  margin: 44px 12px 44px 8px;
+  padding: 8px 12px 0 8px;
+  border-radius: 20px;
+  box-shadow: -1px -1px 0px #e79776;
+
+  @include lg {
+    height: 400px;
+    padding: 12px 0 0 12px;
+    margin: 64px 0 0 12px;
+  }
+}
+
+.features-label {
+  padding: 8px 0 8px 16px;
+  border-radius: 0 0 0 10px;
+  margin: 0 12px 0 0;
+  background-color: #f6f4e9;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+
+.features-text {
+  max-width: 274px;
+  padding: 8px;
+  border-radius: 10px 10px 0 0;
+  background-color: #f6f4e9;
+  position: absolute;
+  z-index: 1;
+  left: 32px;
+  top: 228px;
+}
+
+.features-lg-text {
+  @include lg {
+    letter-spacing: 8px;
+    padding: 16px 8px;
+    border-radius: 0 10px 0 0;
+    margin: 0;
+    background-color: #f6f4e9;
+    position: absolute;
+    z-index: 1;
+    left: 24px;
+    top: 94px;
   }
 }
