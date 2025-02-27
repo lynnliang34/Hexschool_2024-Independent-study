@@ -46,7 +46,7 @@
           <br />
           5.場地與設備:課程於館内瑜珈教室進行,提供舒適的活動空間。參加者建議穿著舒適的運動服裝,請自備水壺,本館提供瑜伽墊供使用。
         </p>
-        <button class="btn btn-secondary text-white w-100">
+        <button class="btn btn-secondary course-btn text-white">
           預約課程
           <svg
             class="course-arrow"
@@ -61,6 +61,72 @@
           </svg>
         </button>
       </div>
+
+      <!-- 電腦版課程介紹 -->
+      <div class="d-none d-lg-block my-10 pb-15">
+        <div class="row">
+          <div class="col-7">
+            <h2 class="fs-1 text-secondary vertical-rl course-label">
+              運動保健
+            </h2>
+            <img
+              src="/assets/images/expressive-senior-man-posing-outdoor.png"
+              alt=""
+              class="object-fit-cover rounded-20 course-lg-img"
+            />
+          </div>
+          <div class="col-5">
+            <div class="course-info py-5 px-6">
+              <p class="fs-5 mb-1">
+                <span class="fw-bold">1.課程時長:</span
+                >每次課程約一小時,設計以輕松、有效的伸展和柔軟運動為主,適合早晨進行以啟動一天的活力。<br />
+                <span class="fw-bold">2.上課時間:</span
+                >每週一、三、五早上9:00至10:00 <br />
+                <span class="fw-bold">3.適用年齡:</span>50歲以上的中老年人
+                <br />
+                <span class="fw-bold">4.身體狀況要求:</span
+                >課程設計考慮到參加者的身體狀況,無需特別的身體條件,僅需具備基本的運動能力,如能站立和進行輕度運動。
+                <br />
+                <span class="fw-bold">5.場地與設備:</span
+                >課程於館内瑜珈教室進行,提供舒適的活動空間。參加者建議穿著舒適的運動服裝,請自備水壺,本館提供瑜伽墊供使用。
+              </p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-secondary course-btn text-white fs-4">
+                  預約課程
+                  <svg
+                    class="course-arrow"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.72973 1L9 6L3.72973 11L2.5 9.83333L6.54054 6L2.5 2.16667L3.72973 1Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section2 -->
+    <div class="container">
+      <!-- 分隔線 -->
+      <picture>
+        <source
+          srcset="/assets/images/dividers/divider-sm.png"
+          media="(max-width: 576px)"
+          class="mb-2"
+        />
+        <img
+          src="/assets/images/dividers/divider-lg.png"
+          alt=""
+          class="mt-lg-10 mb-4"
+        />
+      </picture>
     </div>
 
     <%- include('./layout/footer'); -%>
