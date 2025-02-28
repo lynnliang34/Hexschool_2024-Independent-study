@@ -18,6 +18,7 @@
 
 @import "./utils/mixin";
 @import "./base/base";
+@import "./base/font-weight";
 @import "./utils/line-height";
 @import "./utils/up-to-n-lines";
 @import "./utils/writing-mode";
@@ -32,3 +33,4 @@
 @import "./pages/explore-courses.scss";
 @import "./pages/course-details.scss";
 @import "./pages/knowledge-sharing.scss";
+@import "./pages/about";
