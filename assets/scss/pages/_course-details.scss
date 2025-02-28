@@ -11,7 +11,7 @@
   background: white;
   padding: 0 8px 8px 0;
   border-radius: 20px;
-  box-shadow: 1px 1px 0px #84ccc9;
+  box-shadow: 1px 1px 0px $secondary;
   position: relative;
 }
 
@@ -34,7 +34,7 @@
   margin: 320px 0 0 -70px;
   max-width: 596px;
   border-radius: 20px;
-  border: 2px solid #84ccc9;
+  border: 2px solid $secondary;
   background-color: white;
   position: absolute;
   z-index: 1;
@@ -60,7 +60,7 @@
   margin: 44px 0 44px 8px;
   padding: 8px 12px 0 8px;
   border-radius: 20px;
-  box-shadow: -1px -1px 0px #e79776;
+  box-shadow: -1px -1px 0px $primary;
   object-position: top center;
 
   @include lg {
@@ -74,7 +74,7 @@
   padding: 8px 0 8px 16px;
   border-radius: 0 0 0 10px;
   margin: 0 12px 0 0;
-  background-color: #f6f4e9;
+  background-color: $primary-2;
   position: absolute;
   z-index: 1;
   right: 0;
@@ -85,7 +85,7 @@
   max-width: 274px;
   padding: 8px;
   border-radius: 10px 10px 0 0;
-  background-color: #f6f4e9;
+  background-color: $primary-2;
   position: absolute;
   z-index: 1;
   left: 32px;
@@ -98,7 +98,7 @@
     padding: 16px 8px;
     border-radius: 0 10px 0 0;
     margin: 0;
-    background-color: #f6f4e9;
+    background-color: $primary-2;
     position: absolute;
     z-index: 1;
     left: 24px;
@@ -186,8 +186,8 @@
 
 // section4
 .teacher-card {
-  background-color: #f6f4e9;
-  border: 2px solid #e79776;
+  background-color: $primary-2;
+  border: 2px solid $primary;
 }
 
 .teacher-img {
