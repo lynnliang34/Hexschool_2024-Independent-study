@@ -1,0 +1,21 @@
+.about-slogan {
+  width: 83%;
+  max-width: 311px;
+  padding: 8px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-bg {
+  width: 93.35%;
+  max-width: 351px;
+  height: 304px;
+  margin-top: -34px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
+  background-position: 0 52px;
+}
