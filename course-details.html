@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>愉運 Move with Joy</title>
-    <script type="module" crossorigin src="/Hexschool_2024-Independent-study/assets/main-fc322f59.js"></script>
-    <link rel="stylesheet" href="/Hexschool_2024-Independent-study/assets/main-29a45273.css">
+    <script type="module" crossorigin src="/Hexschool_2024-Independent-study/assets/main-81320cb8.js"></script>
+    <link rel="stylesheet" href="/Hexschool_2024-Independent-study/assets/main-99e69adf.css">
   </head>
   <body>
     <!-- <div class="header">
@@ -181,7 +181,7 @@
               <div class="modal-body">
                 <div class="ms-12">
                   <div class="mb-6">
-                    <a class="modal-link-1" href="#"
+                    <a class="modal-link-1" href="about.html"
                       >關於我們
                       <span>
                         <svg
@@ -326,7 +326,10 @@
             <div class="d-flex align-items-center">
               <ul class="navbar-nav me-lg-3 me-xl-5 me-xxl-10">
                 <li class="nav-item me-xxl-6">
-                  <a class="nav-link-1" href="#" data-target="section-1"
+                  <a
+                    class="nav-link-1"
+                    href="about.html"
+                    data-target="section-1"
                     >關於我們</a
                   >
                   <div id="section-1" class="hover-section">
@@ -384,7 +387,397 @@
     </nav>
   </div>
 </div>
-    <h1>我是詳細課程內容</h1>
+    <!-- section1 -->
+    <div class="container">
+      <!-- 分隔線 -->
+      <picture>
+        <source
+          srcset="data:image/png;base64,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 "
+          media="(max-width: 576px)"
+          class="mt-4 mb-2"
+        />
+        <img
+          src="/Hexschool_2024-Independent-study/assets/divider-lg-ad831c2d.png"
+          alt=""
+          class="d-lg-none"
+        />
+      </picture>
+
+      <h1 class="fs-3 fs-lg-1 mt-lg-12">輕鬆有氧運動</h1>
+      <p class="fs-7 fs-lg-5 mt-2 mt-lg-4">
+        專為中老年人設計,涵蓋柔軟舒展和簡單動作,旨在幫助提升身體靈活性和柔韌性。這個課程通過輕絲的運動,增強關節活動範圍,促進血液循環,
+        並改善整體健康。每天早晨進行晨間操,不僅能喚醒身體,還能提升精神狀態,使老年人更有活力地迎接一天的挑戰,改善生活品質,維持健康生活方式。
+      </p>
+
+      <!-- 手機版課程介紹 -->
+      <div class="d-lg-none border border-secondary rounded my-6 p-2">
+        <h2 class="fs-4 text-secondary mb-2">運動保健</h2>
+        <img
+          src="/Hexschool_2024-Independent-study/assets/expressive-senior-man-posing-outdoor-a94e0505.png"
+          alt=""
+          class="object-fit-cover rounded-20 course-img mb-2"
+        />
+        <p class="fs-7 mb-2">
+          1.課程時長:每次課程約一小時,設計以輕松、有效的伸展和柔軟運動為主,適合早晨進行以啟動一天的活力。<br />
+          2.上課時間:每週一、三、五早上9:00至10:00 <br />
+          3.適用年齡:50歲以上的中老年人 <br />
+          4.身體狀況要求:課程設計考慮到參加者的身體狀況,無需特別的身體條件,僅需具備基本的運動能力,如能站立和進行輕度運動
+          <br />
+          5.場地與設備:課程於館内瑜珈教室進行,提供舒適的活動空間。參加者建議穿著舒適的運動服裝,請自備水壺,本館提供瑜伽墊供使用。
+        </p>
+        <button class="btn btn-secondary course-btn text-white">
+          預約課程
+          <svg
+            class="course-arrow"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.72973 1L9 6L3.72973 11L2.5 9.83333L6.54054 6L2.5 2.16667L3.72973 1Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- 電腦版課程介紹 -->
+      <div class="d-none d-lg-block my-10 pb-15">
+        <div class="row">
+          <div class="col-7">
+            <h2 class="fs-1 text-secondary vertical-rl course-label">
+              運動保健
+            </h2>
+            <img
+              src="/Hexschool_2024-Independent-study/assets/expressive-senior-man-posing-outdoor-a94e0505.png"
+              alt=""
+              class="object-fit-cover rounded-20 course-lg-img"
+            />
+          </div>
+          <div class="col-5">
+            <div class="course-info py-5 px-6">
+              <p class="fs-5 mb-1">
+                <span class="fw-bold">1.課程時長:</span
+                >每次課程約一小時,設計以輕松、有效的伸展和柔軟運動為主,適合早晨進行以啟動一天的活力。<br />
+                <span class="fw-bold">2.上課時間:</span
+                >每週一、三、五早上9:00至10:00 <br />
+                <span class="fw-bold">3.適用年齡:</span>50歲以上的中老年人
+                <br />
+                <span class="fw-bold">4.身體狀況要求:</span
+                >課程設計考慮到參加者的身體狀況,無需特別的身體條件,僅需具備基本的運動能力,如能站立和進行輕度運動。
+                <br />
+                <span class="fw-bold">5.場地與設備:</span
+                >課程於館内瑜珈教室進行,提供舒適的活動空間。參加者建議穿著舒適的運動服裝,請自備水壺,本館提供瑜伽墊供使用。
+              </p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-secondary course-btn text-white fs-4">
+                  預約課程
+                  <svg
+                    class="course-arrow"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.72973 1L9 6L3.72973 11L2.5 9.83333L6.54054 6L2.5 2.16667L3.72973 1Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section2 -->
+    <div class="container">
+      <!-- 分隔線 -->
+      <picture>
+        <source
+          srcset="data:image/png;base64,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 "
+          media="(max-width: 576px)"
+        />
+        <img
+          src="/Hexschool_2024-Independent-study/assets/divider-lg-ad831c2d.png"
+          alt=""
+          class="mt-6 mt-lg-10 mb-2 mb-lg-4"
+        />
+      </picture>
+
+      <!-- 標題 -->
+      <div class="mb-6 mb-lg-10">
+        <!-- 手機版  -->
+        <div class="d-lg-none">
+          <h2 class="fs-3">產品特色</h2>
+        </div>
+        <!-- 電腦版 -->
+        <div class="d-none d-lg-block">
+          <h2 class="fs-1">探索其他領域</h2>
+          <p class="fs-5 mt-2 mt-lg-4">
+            提供低衝擊性、個性化且包含全面身體素質訓練的運動計劃,並由專業人員指導,促進健康與社交互動。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary-2 py-5 pb-lg-0">
+      <div class="container">
+        <!-- 特色介紹 -->
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col mb-6 mb-lg-0 ps-lg-13 position-relative">
+            <h3 class="fs-3 fs-lg-1 text-primary vertical-rl features-label">
+              低衝擊性設計
+            </h3>
+            <img
+              src="/Hexschool_2024-Independent-study/assets/workout-home-old-woman-with-hands-waist-95254fa4.png"
+              alt=""
+              class="object-fit-cover features-img"
+            />
+            <p class="d-lg-none fs-5 features-text">
+              運動形式溫和，對關節和肌肉的壓力較小,並且預防傷。適合年長者進行鍛鍊
+            </p>
+            <p class="d-none d-lg-block fs-5 vertical-rl features-lg-text">
+              運動形式溫和，<br />
+              對關節和肌肉的壓力較小，並<br />
+              且預防損傷。適合年長者進行鍛鍊
+            </p>
+          </div>
+          <div class="col mt-lg-30 ps-lg-13 pb-lg-24 position-relative">
+            <h3 class="fs-3 fs-lg-1 text-primary vertical-rl features-label">
+              靈活的強度調整
+            </h3>
+            <img
+              src="/Hexschool_2024-Independent-study/assets/side-view-man-running-gym-f845c158.png"
+              alt=""
+              class="object-fit-cover features-img"
+            />
+            <p class="d-lg-none fs-5 features-text">
+              運動形式溫和，對關節和肌肉的壓力較小,並且預防傷。適合年長者進行鍛鍊
+            </p>
+            <p class="d-none d-lg-block fs-5 vertical-rl features-lg-text">
+              運動強度可根據個人，<br />
+              健康狀況和體能水平進行調整<br />
+              讓每位參與者都能獲得運動益處。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section3 -->
+    <div class="container">
+      <!-- 分隔線 -->
+      <picture>
+        <source
+          srcset="data:image/png;base64,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 "
+          media="(max-width: 576px)"
+        />
+        <img
+          src="/Hexschool_2024-Independent-study/assets/divider-lg-ad831c2d.png"
+          alt=""
+          class="mt-6 mt-lg-10 mb-2 mb-lg-4"
+        />
+      </picture>
+
+      <h1 class="fs-3 fs-lg-1">服務內容</h1>
+      <div class="row row-cols-1 row-cols-lg-3 my-6 my-lg-10">
+        <div class="col position-relative mb-6 mb-lg-0">
+          <h3 class="fs-2 text-secondary-2 vertical-rl service-label">
+            有 氧 步 行 團 體
+          </h3>
+          <div class="position-relative mb-2 mb-lg-6">
+            <div class="top-left-decoration"></div>
+            <div class="service-img-overlay">
+              <img
+                src="/Hexschool_2024-Independent-study/assets/Exclude-44c705ff.png"
+                alt=""
+                class="object-fit-cover service-img"
+              />
+            </div>
+            <div class="bottom-right-decoration"></div>
+          </div>
+          <p class="fs-5 bg-secondary-1 rounded service-text p-4">
+            組織參與者在公園或社區內進行30分鐘的有氧步行活動,活動強度適中,步伐穩定,適合不同體能狀況的長者。這種有氧運動不僅有助於提升心肺功能,還能促進全身血液循環,並結合社交互動,讓參與者在輕鬆愉快的氛圍中保持健康。
+          </p>
+        </div>
+        <div class="col position-relative mb-6 mb-lg-0">
+          <h3 class="fs-2 text-secondary-2 vertical-rl service-label">
+            有 氧 舞 蹈 課 程
+          </h3>
+          <div class="position-relative mb-2 mb-lg-6">
+            <div class="top-left-decoration"></div>
+            <div class="service-img-overlay">
+              <img
+                src="/Hexschool_2024-Independent-study/assets/Exclude-1-1-44cae4d1.png"
+                alt=""
+                class="object-fit-cover service-img"
+              />
+            </div>
+            <div class="bottom-right-decoration"></div>
+          </div>
+          <p class="fs-5 bg-secondary-1 rounded service-text p-4">
+            設計輕鬆愉快的有氧舞蹈課程,結合簡單易學的舞蹈動作和輕快的音樂,讓參與者在愉悅的氛圍中進行有氧運動。這些課程有助於提升心肺功能,增強節奏感與協調性,同時還能改善平衡能力,適合各種健康狀況的長者參與。
+          </p>
+        </div>
+        <div class="col position-relative">
+          <h3 class="fs-2 text-secondary-2 vertical-rl service-label">
+            有 氧 運 動 教 育
+          </h3>
+          <div class="position-relative mb-2 mb-lg-6">
+            <div class="top-left-decoration"></div>
+            <div class="service-img-overlay">
+              <img
+                src="/Hexschool_2024-Independent-study/assets/Exclude-2-abe42e2a.png"
+                alt=""
+                class="object-fit-cover service-img"
+              />
+            </div>
+            <div class="bottom-right-decoration"></div>
+          </div>
+          <p class="fs-5 bg-secondary-1 rounded service-text p-4">
+            通過專業講座和實際演示,教授參與者有氧運動的基本概念、正確姿勢和呼吸方法,幫助他們理解有氧運動的重要性。這些教育活動旨在提高參與者對有氧運動的認識,鼓勵他們將有氧運動融入日常生活,以維持長期健康。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- section4 -->
+    <div class="container">
+      <!-- 分隔線 -->
+      <picture>
+        <source
+          srcset="data:image/png;base64,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 "
+          media="(max-width: 576px)"
+        />
+        <img
+          src="/Hexschool_2024-Independent-study/assets/divider-lg-ad831c2d.png"
+          alt=""
+          class="mt-6 mt-lg-10 mb-2 mb-lg-4"
+        />
+      </picture>
+
+      <h1 class="fs-3 fs-lg-1 mb-6 mb-lg-10">師資陣容</h1>
+      <div class="row row-cols-1 row-cols-lg-4 mb-20 mb-lg-36">
+        <div class="col mb-6 mb-lg-0">
+          <div class="card teacher-card p-2 px-lg-7 py-lg-3">
+            <div
+              class="d-flex flex-lg-column align-items-center align-items-lg-start"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/Hexschool_2024-Independent-study/assets/Hui-Zhen Lin-53e90449.png"
+                  class="teacher-img mb-1 mb-lg-2"
+                  alt="..."
+                />
+                <h5
+                  class="align-self-lg-start fs-6 fs-lg-3 text-primary mb-1 mb-lg-2"
+                >
+                  林慧珍
+                </h5>
+              </div>
+              <p class="fs-7 fs-lg-6 ms-5 ms-lg-0">
+                1. 健康管理碩士學位 <br />
+                2. 15年運動指導經驗 <br />
+                3. 專長於老年人運動 <br />
+                4. 認證瑜伽和伸展教練 <br />
+                5. 擅長設計個性化運動計劃
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-6 mb-lg-0">
+          <div class="card teacher-card p-2 px-lg-7 py-lg-3">
+            <div
+              class="d-flex flex-lg-column align-items-center align-items-lg-start"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/Hexschool_2024-Independent-study/assets/Wei-Ming Zhang-0e12274a.png"
+                  class="teacher-img mb-1 mb-lg-2"
+                  alt="..."
+                />
+                <h5
+                  class="align-self-lg-start fs-6 fs-lg-3 text-primary mb-1 mb-lg-2"
+                >
+                  張偉明
+                </h5>
+              </div>
+              <p class="fs-7 fs-lg-6 ms-5 ms-lg-0">
+                1. 運動科學本科學位 <br />
+                2. 10年健身教學經驗 <br />
+                3. 資深重訓與有氧專家 <br />
+                4. 認證體能訓練教練 <br />
+                5. 多次參與健康推廣活動 <br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-6 mb-lg-0">
+          <div class="card teacher-card p-2 px-lg-7 py-lg-3">
+            <div
+              class="d-flex flex-lg-column align-items-center align-items-lg-start"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/Hexschool_2024-Independent-study/assets/Mei-Lan Li-82c55f72.png"
+                  class="teacher-img mb-1 mb-lg-2"
+                  alt="..."
+                />
+                <h5
+                  class="align-self-lg-start fs-6 fs-lg-3 text-primary mb-1 mb-lg-2"
+                >
+                  李美蘭
+                </h5>
+              </div>
+              <p class="fs-7 fs-lg-6 ms-5 ms-lg-0">
+                1. 運動健康專業碩士 <br />
+                2. 12年老年人健康指導經驗 <br />
+                3. 認證普拉提和柔軟操教練 <br />
+                4. 擅長設計舒適的運動程序 <br />
+                5. 擁有多項心理健康輔導資格 <br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card teacher-card p-2 px-lg-7 py-lg-3">
+            <div
+              class="d-flex flex-lg-column align-items-center align-items-lg-start"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  src="/Hexschool_2024-Independent-study/assets/Zhi-Qiang Wang-c7432f88.png"
+                  class="teacher-img mb-1 mb-lg-2"
+                  alt="..."
+                />
+                <h5
+                  class="align-self-lg-start fs-6 fs-lg-3 text-primary mb-1 mb-lg-2"
+                >
+                  王志強
+                </h5>
+              </div>
+              <p class="fs-7 fs-lg-6 ms-5 ms-lg-0">
+                1. 運動生理學碩士學位 <br />
+                2. 8年運動指導與健康管理經驗 <br />
+                3. 專長於功能性訓練和姿勢矯正 <br />
+                4. 認證運動心理學教練 <br />
+                5. 曾擔任多個運動健康研討會講者 <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer">
   <div
     class="container position-relative d-flex flex-column flex-lg-row justify-content-center align-items-center pt-11 pt-lg-30"
@@ -521,61 +914,65 @@
     <!-- 聯絡我們 -->
     <div class="ms-lg-46">
       <h3 class="text-secondary-2 fs-5 fs-lg-3 mb-2 mb-lg-4">聯絡我們</h3>
-      <div class="d-flex align-items-center mb-2 mb-lg-4">
-        <svg
-          class="contact-icon me-2"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M21.6641 11.416L18.633 8.38489V4.88348C18.633 4.25045 18.1199 3.73733 17.4861 3.73733C16.8522 3.73733 16.3403 4.25045 16.3403 4.88348V6.0922L14.0836 3.83544C12.9677 2.72038 11.0279 2.72199 9.91441 3.83746L2.33549 11.416C1.88817 11.8641 1.88817 12.5896 2.33549 13.0373C2.78321 13.4854 3.50989 13.4854 3.95721 13.0373L11.5353 5.45837C11.7824 5.21291 12.2172 5.21291 12.4631 5.45756L20.0424 13.0373C20.2673 13.2614 20.5604 13.3728 20.853 13.3728C21.1457 13.3728 21.44 13.2614 21.6641 13.0373C22.1118 12.5896 22.1118 11.8645 21.6641 11.416Z"
-          />
-          <path
-            d="M12.3981 7.63401C12.1781 7.41399 11.8212 7.41399 11.602 7.63401L4.93547 14.2985C4.8301 14.4039 4.77075 14.5472 4.77075 14.6974V19.5581C4.77075 20.6986 5.69566 21.6235 6.83615 21.6235H10.1365V16.5121H13.8628V21.6235H17.1636C18.3041 21.6235 19.229 20.6986 19.229 19.5581V14.6974C19.229 14.5476 19.17 14.4039 19.0643 14.2985L12.3985 7.63401H12.3981Z"
-          />
-        </svg>
-        <p class="text-secondary-2 fs-6 fs-lg-4">
-          地址: 新北市永康區光復路二段168號
-        </p>
-      </div>
-      <div class="d-flex align-items-center mb-2 mb-lg-4">
-        <svg
-          class="contact-icon me-2"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M21.2336 5.72856C20.466 4.6727 19.1222 3.71958 17.4492 3.04497C15.7855 2.37387 13.8535 2.00278 12.0093 2.00004C10.1652 1.99536 8.23082 2.36254 6.56441 3.02856C4.88863 3.69809 3.54137 4.64731 2.77144 5.70044C2.03199 6.71215 1.81871 7.80278 2.15504 8.85434C2.3734 9.53637 3.00973 9.99536 3.73941 9.99653L6.23746 9.99887H6.2398C6.73785 9.99887 7.20582 9.7809 7.52379 9.40044C7.83863 9.02426 7.96871 8.53208 7.8816 8.05083C7.87887 8.03676 7.87574 8.0227 7.87223 8.00864L7.74058 7.4977C8.46832 7.15044 10.1175 6.47934 12.0011 6.48989C13.8836 6.49965 15.5316 7.17036 16.2601 7.51762L16.1265 8.02583C16.1226 8.04028 16.1195 8.05473 16.1168 8.06919C16.0281 8.55044 16.157 9.04262 16.4707 9.41958C16.7882 9.80161 17.2566 10.0211 17.7558 10.0219L20.2539 10.0243H20.2562C20.9843 10.0243 21.6211 9.56723 21.841 8.88676C22.1804 7.83559 21.9703 6.7434 21.2324 5.72856H21.2336Z"
-          />
-          <path
-            d="M17.6485 12.5746L15.7856 10.6187C15.6731 10.5004 15.5168 10.4336 15.3536 10.4336H14.1497V9.62031C14.1497 9.29062 13.8825 9.02344 13.5528 9.02344C13.2231 9.02344 12.9559 9.29062 12.9559 9.62031V10.4336H11.045V9.62031C11.045 9.29062 10.7778 9.02344 10.4481 9.02344C10.1184 9.02344 9.85122 9.29062 9.85122 9.62031V10.4336H8.64731C8.48403 10.4336 8.32778 10.5004 8.21528 10.6187L6.35239 12.5746C4.89185 14.1082 4.08716 16.1191 4.08716 18.2371V20.6922C4.08716 21.0219 4.35435 21.2891 4.68403 21.2891H19.3165C19.6461 21.2891 19.9133 21.0219 19.9133 20.6922V18.2371C19.9133 16.1191 19.109 14.1082 17.6485 12.5746ZM12.0004 19.1078C10.2782 19.1078 8.877 17.7066 8.877 15.9844C8.877 14.2621 10.2782 12.8609 12.0004 12.8609C13.7227 12.8609 15.1239 14.2621 15.1239 15.9844C15.1239 17.7066 13.7227 19.1078 12.0004 19.1078Z"
-          />
-          <path
-            d="M12.0005 14.0543C10.9364 14.0543 10.0708 14.9199 10.0708 15.984C10.0708 17.0481 10.9364 17.9137 12.0005 17.9137C13.0646 17.9137 13.9302 17.0481 13.9302 15.984C13.9302 14.9199 13.0646 14.0543 12.0005 14.0543Z"
-          />
-        </svg>
-        <p class="text-secondary-2 fs-6 fs-lg-4">電話:(02) 2934-5678</p>
-      </div>
-      <div class="d-flex align-items-center">
-        <svg
-          class="contact-icon me-2"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.5788 14.4242C12.3897 14.5358 12.1776 14.5803 11.9885 14.5803C11.7994 14.5803 11.5872 14.5358 11.3981 14.4242L2 9V16.2099C2 17.7501 3.32223 19 4.95162 19H19.0484C20.6778 19 22 17.7501 22 16.2099V9L12.5783 14.4242H12.5788Z"
-          />
-          <path
-            d="M19.1153 4H4.88428C3.47776 4 2.28587 5.06759 2 6.4917L12.0119 13L22 6.4917C21.7141 5.06808 20.5222 4 19.1157 4H19.1153Z"
-          />
-        </svg>
-        <p class="text-secondary-2 fs-6 fs-lg-4">
-          E-mail: handlewithcare@gmail.com
-        </p>
-      </div>
+      <address class="d-flex flex-column">
+        <div class="d-flex align-items-center mb-2 mb-lg-4">
+          <svg
+            class="contact-icon me-2"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.6641 11.416L18.633 8.38489V4.88348C18.633 4.25045 18.1199 3.73733 17.4861 3.73733C16.8522 3.73733 16.3403 4.25045 16.3403 4.88348V6.0922L14.0836 3.83544C12.9677 2.72038 11.0279 2.72199 9.91441 3.83746L2.33549 11.416C1.88817 11.8641 1.88817 12.5896 2.33549 13.0373C2.78321 13.4854 3.50989 13.4854 3.95721 13.0373L11.5353 5.45837C11.7824 5.21291 12.2172 5.21291 12.4631 5.45756L20.0424 13.0373C20.2673 13.2614 20.5604 13.3728 20.853 13.3728C21.1457 13.3728 21.44 13.2614 21.6641 13.0373C22.1118 12.5896 22.1118 11.8645 21.6641 11.416Z"
+            />
+            <path
+              d="M12.3981 7.63401C12.1781 7.41399 11.8212 7.41399 11.602 7.63401L4.93547 14.2985C4.8301 14.4039 4.77075 14.5472 4.77075 14.6974V19.5581C4.77075 20.6986 5.69566 21.6235 6.83615 21.6235H10.1365V16.5121H13.8628V21.6235H17.1636C18.3041 21.6235 19.229 20.6986 19.229 19.5581V14.6974C19.229 14.5476 19.17 14.4039 19.0643 14.2985L12.3985 7.63401H12.3981Z"
+            />
+          </svg>
+          <p class="text-secondary-2 fs-6 fs-lg-4">
+            地址: 新北市永康區光復路二段168號
+          </p>
+        </div>
+        <div class="address-link d-flex align-items-center mb-2 mb-lg-4">
+          <svg
+            class="contact-icon me-2"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.2336 5.72856C20.466 4.6727 19.1222 3.71958 17.4492 3.04497C15.7855 2.37387 13.8535 2.00278 12.0093 2.00004C10.1652 1.99536 8.23082 2.36254 6.56441 3.02856C4.88863 3.69809 3.54137 4.64731 2.77144 5.70044C2.03199 6.71215 1.81871 7.80278 2.15504 8.85434C2.3734 9.53637 3.00973 9.99536 3.73941 9.99653L6.23746 9.99887H6.2398C6.73785 9.99887 7.20582 9.7809 7.52379 9.40044C7.83863 9.02426 7.96871 8.53208 7.8816 8.05083C7.87887 8.03676 7.87574 8.0227 7.87223 8.00864L7.74058 7.4977C8.46832 7.15044 10.1175 6.47934 12.0011 6.48989C13.8836 6.49965 15.5316 7.17036 16.2601 7.51762L16.1265 8.02583C16.1226 8.04028 16.1195 8.05473 16.1168 8.06919C16.0281 8.55044 16.157 9.04262 16.4707 9.41958C16.7882 9.80161 17.2566 10.0211 17.7558 10.0219L20.2539 10.0243H20.2562C20.9843 10.0243 21.6211 9.56723 21.841 8.88676C22.1804 7.83559 21.9703 6.7434 21.2324 5.72856H21.2336Z"
+            />
+            <path
+              d="M17.6485 12.5746L15.7856 10.6187C15.6731 10.5004 15.5168 10.4336 15.3536 10.4336H14.1497V9.62031C14.1497 9.29062 13.8825 9.02344 13.5528 9.02344C13.2231 9.02344 12.9559 9.29062 12.9559 9.62031V10.4336H11.045V9.62031C11.045 9.29062 10.7778 9.02344 10.4481 9.02344C10.1184 9.02344 9.85122 9.29062 9.85122 9.62031V10.4336H8.64731C8.48403 10.4336 8.32778 10.5004 8.21528 10.6187L6.35239 12.5746C4.89185 14.1082 4.08716 16.1191 4.08716 18.2371V20.6922C4.08716 21.0219 4.35435 21.2891 4.68403 21.2891H19.3165C19.6461 21.2891 19.9133 21.0219 19.9133 20.6922V18.2371C19.9133 16.1191 19.109 14.1082 17.6485 12.5746ZM12.0004 19.1078C10.2782 19.1078 8.877 17.7066 8.877 15.9844C8.877 14.2621 10.2782 12.8609 12.0004 12.8609C13.7227 12.8609 15.1239 14.2621 15.1239 15.9844C15.1239 17.7066 13.7227 19.1078 12.0004 19.1078Z"
+            />
+            <path
+              d="M12.0005 14.0543C10.9364 14.0543 10.0708 14.9199 10.0708 15.984C10.0708 17.0481 10.9364 17.9137 12.0005 17.9137C13.0646 17.9137 13.9302 17.0481 13.9302 15.984C13.9302 14.9199 13.0646 14.0543 12.0005 14.0543Z"
+            />
+          </svg>
+          <a class="fs-6 fs-lg-4" href="tel:+886-2-2934-5678"
+            >電話:(02) 2934-5678</a
+          >
+        </div>
+        <div class="address-link d-flex align-items-center">
+          <svg
+            class="contact-icon me-2"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.5788 14.4242C12.3897 14.5358 12.1776 14.5803 11.9885 14.5803C11.7994 14.5803 11.5872 14.5358 11.3981 14.4242L2 9V16.2099C2 17.7501 3.32223 19 4.95162 19H19.0484C20.6778 19 22 17.7501 22 16.2099V9L12.5783 14.4242H12.5788Z"
+            />
+            <path
+              d="M19.1153 4H4.88428C3.47776 4 2.28587 5.06759 2 6.4917L12.0119 13L22 6.4917C21.7141 5.06808 20.5222 4 19.1157 4H19.1153Z"
+            />
+          </svg>
+          <a class="fs-6 fs-lg-4" href="mailto:handlewithcare@gmail.com">
+            E-mail: handlewithcare@gmail.com
+          </a>
+        </div>
+      </address>
     </div>
 
     <!-- 回到最上方箭頭 -->
