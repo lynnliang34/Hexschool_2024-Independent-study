@@ -1,0 +1,23 @@
+.checkout-title {
+  border-bottom: 2px solid $primary;
+  height: 55px;
+
+  @include lg {
+    height: 93px;
+  }
+}
+
+.cart-list-item {
+  height: 124px;
+  border-bottom: 1px solid $secondary;
+}
+
+.cart-list-img {
+  width: 108px;
+  height: 108px;
+
+  @include lg {
+    width: 100px;
+    height: 100px;
+  }
+}
