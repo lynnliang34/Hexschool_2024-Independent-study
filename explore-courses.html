@@ -25,8 +25,8 @@
       }
   }
 </style>
-    <script type="module" crossorigin src="/Hexschool_2024-Independent-study/assets/main-81320cb8.js"></script>
-    <link rel="stylesheet" href="/Hexschool_2024-Independent-study/assets/main-99e69adf.css">
+    <script type="module" crossorigin src="/Hexschool_2024-Independent-study/assets/main-2b0fba77.js"></script>
+    <link rel="stylesheet" href="/Hexschool_2024-Independent-study/assets/main-025433d3.css">
   </head>
   <body>
 
@@ -293,8 +293,27 @@
                     </div>
                   </div>
                   <div class="d-flex">
-                    <a class="modal-link-3 me-2" href="#"> 註冊 </a>
-                    <a class="modal-link-3" href="#"> 登入 </a>
+                    <a class="modal-link-3 register-link me-2" href="#">
+                      註冊
+                    </a>
+                    <a class="modal-link-3 login-link" href="#"> 登入 </a>
+                    <a
+                      class="modal-link-3 cart-link ms-2 d-none"
+                      href="checkout.html"
+                    >
+                      <i class="bi bi-cart-fill position-relative">
+                        <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                          style="font-size: 10px"
+                        >
+                          99+
+                          <span class="visually-hidden">purchase quantity</span>
+                        </span>
+                      </i>
+                    </a>
+                    <a class="modal-link-3 logout-link d-none" href="#">
+                      登出
+                    </a>
                   </div>
                 </div>
               </div>
@@ -395,10 +414,26 @@
               </ul>
               <ul class="navbar-nav">
                 <li class="nav-item me-xl-2">
-                  <a class="nav-link-2" href="#">註冊</a>
+                  <a class="nav-link-2 register-link d-none" href="#">註冊</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link-2" href="#">登入</a>
+                  <a class="nav-link-2 login-link d-none" href="#">登入</a>
+                </li>
+                <li class="nav-item me-xl-2">
+                  <a class="nav-link-2 cart-link" href="checkout.html"
+                    ><i class="bi bi-cart-fill position-relative">
+                      <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                        style="font-size: 10px"
+                      >
+                        99+
+                        <span class="visually-hidden">purchase quantity</span>
+                      </span>
+                    </i></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link-2 logout-link" href="#">登出</a>
                 </li>
               </ul>
             </div>
