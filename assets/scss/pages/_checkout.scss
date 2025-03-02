@@ -133,3 +133,38 @@
     fill: $secondary-2;
   }
 }
+
+// 2 選擇優惠券
+
+.checkout-input {
+  border: 1px solid #121212;
+  padding: 8px 12px;
+  font-size: 16px;
+  height: 40px;
+
+  @include lg {
+    height: 66px;
+    padding: 12px;
+    font-size: 28px;
+  }
+
+  &::placeholder {
+    color: #c0c0c0;
+  }
+}
+
+.checkout-btn {
+  font-size: 16px;
+  height: 40px;
+
+  @include lg {
+    font-size: 28px;
+    height: 66px;
+  }
+}
+
+#discount select {
+  @include md {
+    width: 64.5%;
+  }
+}
