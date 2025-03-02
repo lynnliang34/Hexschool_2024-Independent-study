@@ -15,9 +15,121 @@
 .cart-list-img {
   width: 108px;
   height: 108px;
+  object-fit: cover;
+
+  @include md {
+    width: 70px;
+    height: 70px;
+  }
 
   @include lg {
     width: 100px;
     height: 100px;
+  }
+}
+
+// 電腦版  1 購物車
+.cart-list-table {
+  font-size: 18px;
+  width: 100%;
+  border-collapse: collapse;
+
+  & thead {
+    height: 50px;
+    background-color: $primary-2;
+  }
+  @include lg {
+    font-size: 24px;
+  }
+
+  @include xl {
+    font-size: 28px;
+  }
+
+  thead,
+  tbody {
+    display: table;
+    width: 100%;
+  }
+
+  // 表頭欄寬度
+  th:nth-child(1) {
+    width: 29.03%;
+  }
+  th:nth-child(2) {
+    width: 21.88%;
+  }
+  th:nth-child(3) {
+    width: 17.55%;
+  }
+  th:nth-child(4) {
+    width: 18.25%;
+  }
+  th:nth-child(5) {
+    width: 13.29%;
+  }
+
+  // 表中欄寬度
+  td:nth-child(1) {
+    width: 29.03%;
+  }
+  td:nth-child(2) {
+    width: 21.88%;
+  }
+  td:nth-child(3) {
+    width: 17.55%;
+  }
+  td:nth-child(4) {
+    width: 18.25%;
+  }
+  td:nth-child(5) {
+    width: 13.29%;
+  }
+}
+
+.cart-table-spacing {
+  height: 10px;
+
+  @include xl {
+    height: 20px;
+  }
+}
+
+.cart-table-item {
+  height: 120px;
+  border-bottom: 1px solid $secondary;
+
+  @include lg {
+    height: 140px;
+  }
+
+  .text-truncate {
+    width: 108px;
+    margin-left: 12px;
+
+    @include lg {
+      width: 144px;
+    }
+
+    @include xl {
+      width: 168px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.cart-trash {
+  width: 63px;
+  height: 30px;
+  fill: $primary;
+  transition: 0.15s;
+
+  @include lg {
+    width: 84px;
+    height: 40px;
+  }
+
+  &:hover {
+    fill: $secondary-2;
   }
 }
