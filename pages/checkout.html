@@ -311,7 +311,7 @@
               <label
                 for="creditCardNumberInput"
                 class="form-label checkout-label mb-1 mb-lg-2"
-                >信用卡卡號<span class="text-danger ms-1">*</span></label
+                >信用卡卡號<span class="text-primary ms-1">*</span></label
               >
               <input
                 class="form-control checkout-input mb-3 mb-md-0"
@@ -381,6 +381,228 @@
           </div>
         </form>
       </div>
+
+      <!-- 4 發票選項 -->
+      <div class="mb-8 mb-lg-20">
+        <div class="mb-4 mb-lg-10">
+          <div class="checkout-title mb-1 mb-lg-2">
+            <h2 class="fs-2 fs-lg-0 text-primary">
+              4 <span class="fs-3 fs-lg-1 ms-2">發票選項</span>
+            </h2>
+          </div>
+          <p class="fs-7 fs-lg-6 text-neutral-1">
+            以下資訊只用於開立發票，並不會在其他頁面顯示。發票一經開立後不可更改，請確認資訊是否都填寫正確喔！（<span
+              class="text-primary"
+              >*</span
+            >為必填欄位）
+          </p>
+        </div>
+
+        <form id="invoice">
+          <!-- 帶入上次結帳資料 -->
+          <button
+            class="btn btn-outline-primary checkout-btn last-checkout-information mb-3 mb-lg-6"
+          >
+            帶入上次結帳資料
+          </button>
+
+          <!-- 第一行輸入欄 -->
+          <div class="d-md-flex justify-content-between mb-3 mb-md-6">
+            <!-- 姓名 -->
+            <div class="w-100 me-2 me-lg-6 mb-3 mb-md-0">
+              <label
+                for="checkoutNameInput"
+                class="form-label checkout-label mb-1 mb-lg-2"
+                >姓名<span class="text-primary ms-1">*</span></label
+              >
+              <input
+                class="form-control checkout-input"
+                id="checkoutNameInput"
+                type="text"
+                name="checkout-name"
+                placeholder="請輸入真實姓名"
+              />
+            </div>
+
+            <!-- 電子信箱 -->
+            <div class="w-100">
+              <label
+                for="checkoutEmailInput"
+                class="form-label checkout-label mb-1 mb-lg-2"
+                >聯絡用電子信箱<span class="text-primary ms-1">*</span></label
+              >
+              <input
+                class="form-control checkout-input"
+                id="checkoutEmailInput"
+                type="text"
+                name="checkout-email"
+                placeholder="請輸入電子信箱"
+              />
+            </div>
+          </div>
+
+          <!-- 第二行輸入欄 -->
+          <div class="d-md-flex justify-content-between mb-3 mb-md-6">
+            <!-- 發票類型 -->
+            <div class="w-100 me-2 me-lg-6 mb-3 mb-md-0">
+              <label
+                for="typeOfInvoice"
+                class="form-label checkout-label mb-1 mb-lg-2"
+                >發票類型<span class="text-primary ms-1">*</span></label
+              >
+              <select
+                class="form-select checkout-input"
+                id="typeOfInvoice"
+                aria-label="Default select example"
+              >
+                <option selected disabled value="">請選擇</option>
+                <option value="electronic">電子發票</option>
+                <option value="GUI-number">統編發票</option>
+                <option value="donation">捐贈發票</option>
+              </select>
+              <p class="invoice-note fs-7 fs-md-6 text-neutral-1 mt-1 mt-lg-2">
+                如需開立統編，請選擇統編發票
+              </p>
+            </div>
+
+            <!-- 電子發票 -->
+            <div
+              class="electronic-invoice invoice-section w-100 d-flex align-items-end mb-md-7 mb-lg-8"
+            >
+              <select
+                class="form-select checkout-input"
+                id="electronicInvoiceSelect"
+                aria-label="Default select example"
+                disabled
+              >
+                <option selected disabled value="">請選擇</option>
+                <option value="natural-person-barcode">自然人憑證條碼</option>
+                <option value="cell-phone-barcode">手機條碼</option>
+              </select>
+            </div>
+
+            <!-- 統編條碼 -->
+            <div
+              class="government-uniform-invoice invoice-section w-100 me-2 me-lg-6 mb-3 mb-md-0 d-none"
+            >
+              <label
+                for="taxIdNumberInput"
+                class="form-label checkout-label mb-1 mb-lg-2"
+                >統一編號<span class="text-primary ms-1">*</span></label
+              >
+              <input
+                class="form-control checkout-input"
+                id="taxIdNumberInput"
+                type="tel"
+                inputmode="numeric"
+                name="tax-ID-number"
+                maxlength="8"
+                placeholder="送出後無法更改，請務必確認"
+              />
+            </div>
+            <div
+              class="government-uniform-invoice invoice-section w-100 d-none"
+            >
+              <label
+                for="receiptTitleInput"
+                class="form-label checkout-label mb-1 mb-lg-2"
+                >發票抬頭<span class="text-primary ms-1">*</span></label
+              >
+              <input
+                class="form-control checkout-input"
+                id="receiptTitleInput"
+                type="text"
+                name="receipt-title"
+                placeholder="送出後無法更改，請務必確認"
+              />
+            </div>
+
+            <!-- 捐贈發票 -->
+            <div
+              class="donation-invoice invoice-section w-100 d-flex align-items-end d-none"
+            >
+              <select
+                class="form-select checkout-input"
+                id="donationInvoiceSelect"
+                aria-label="Default select example"
+              >
+                <option selected disabled value="">請選擇</option>
+                <option value="2468">
+                  社團法人中華民國老人福利關懷協會（2468）
+                </option>
+                <option value="13579">陽光社會福利基金會（13579）</option>
+                <option value="25885">
+                  財團法人伊甸社會福利基金會（25885）
+                </option>
+                <option value="input-donation-code">輸入捐贈碼</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 第三行輸入欄 -->
+          <div class="d-md-flex justify-content-between">
+            <!-- 載具類別 -->
+            <div class="electronic-invoice invoice-section w-100">
+              <label
+                for="carrierTypeInput"
+                class="form-label checkout-label mb-1 mb-lg-2"
+                >載具類別<span class="text-primary ms-1">*</span></label
+              >
+              <input
+                class="form-control checkout-input"
+                id="carrierTypeInput"
+                type="text"
+                placeholder="請輸入載具"
+                disabled
+              />
+            </div>
+
+            <!-- 公司地址 -->
+            <div
+              class="government-uniform-invoice invoice-section w-100 d-none"
+            >
+              <div class="d-md-flex justify-content-between mb-3 mb-md-6">
+                <!-- 地址  -->
+                <div class="w-100 me-2 me-lg-6 mb-3 mb-md-0">
+                  <label
+                    for="companyAddressInput"
+                    class="form-label checkout-label mb-1 mb-lg-2"
+                    >公司地址<span class="text-primary ms-1">*</span></label
+                  >
+                  <input
+                    class="form-control checkout-input"
+                    id="companyAddressInput"
+                    type="text"
+                    name="company-address"
+                    placeholder="請輸入公司地址"
+                  />
+                </div>
+
+                <!-- 郵遞區號 -->
+                <div class="w-100 d-flex align-items-end">
+                  <input
+                    class="form-control checkout-input"
+                    id="companyPostalCodeInput"
+                    type="text"
+                    name="company-postal-code"
+                    placeholder="請輸入郵遞區號"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- 輸入捐贈碼 -->
+            <div class="invoice-section donation-invoice-section w-100 d-none">
+              <input
+                class="form-control checkout-input mt-3 mt-lg-6"
+                id="donationInvoiceInput"
+                type="text"
+                placeholder="輸入捐贈碼"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
 
     <%- include('./layout/footer'); -%>
@@ -425,6 +647,73 @@
         // 顯示行動支付區塊，隱藏信用卡付款區塊
         $(".mobile-payment").removeClass("d-none");
         $(".credit-card").addClass("d-none");
+      });
+
+      /*——————————————— 發票類型 ———————————————*/
+      $("#typeOfInvoice").on("change", function () {
+        // 解除選單禁用狀態，允許選取
+        $("#electronicInvoiceSelect").prop("disabled", false);
+
+        const selectedValue = $(this).val(); // 取得選擇的 value
+
+        // 先隱藏所有發票區塊、備註
+        $(".invoice-section").addClass("d-none");
+        $(".invoice-note").addClass("d-none");
+
+        // 根據選擇的 value 顯示對應區塊
+        if (selectedValue === "electronic") {
+          $(".electronic-invoice").removeClass("d-none");
+          $(".invoice-note").removeClass("d-none");
+        } else if (selectedValue === "GUI-number") {
+          $(".government-uniform-invoice").removeClass("d-none");
+        } else if (selectedValue === "donation") {
+          $(".donation-invoice").removeClass("d-none");
+        }
+      });
+
+      /*——————————————— 電子發票 ———————————————*/
+      $("#electronicInvoiceSelect").on("change", function () {
+        // 解除載具輸入框的禁用狀態，允許輸入
+        $("#carrierTypeInput").prop("disabled", false);
+
+        const selectedValue = $(this).val(); // 取得使用者選擇的電子發票類型
+        const label = $("label[for='carrierTypeInput']"); // 取得載具輸入框的標籤元素
+        const input = $("#carrierTypeInput"); // 取得載具輸入框元素
+
+        if (selectedValue === "natural-person-barcode") {
+          // 若選擇「自然人憑證條碼」，更新標籤內容並加上必填星號
+          label
+            .text("自然人憑證條碼")
+            .append('<span class="text-primary ms-1">*</span>');
+          // 設定輸入框的 name 屬性與 placeholder 說明
+          input.attr({
+            name: "natural-person-barcode",
+            placeholder: "請輸入憑證碼，由2碼大寫字母加上14碼數字組成",
+          });
+        } else if (selectedValue === "cell-phone-barcode") {
+          // 若選擇「手機條碼」，更新標籤內容並加上必填星號
+          label
+            .text("手機條碼")
+            .append('<span class="text-primary ms-1">*</span>');
+          // 設定輸入框的 name 屬性與 placeholder 說明
+          input.attr({
+            name: "cell-phone-barcode",
+            placeholder: "請輸入手機條碼，/ 開頭共8碼",
+          });
+        }
+      });
+
+      /*——————————————— 輸入捐贈碼 ———————————————*/
+      $("#donationInvoiceSelect").on("change", function () {
+        const selectedValue = $(this).val(); // 取得使用者選擇的捐贈發票類型
+
+        // 隱藏捐贈碼輸入區塊
+        $(".donation-invoice-section").addClass("d-none");
+
+        // 若選擇「輸入捐贈碼」，則顯示輸入欄位
+        if (selectedValue === "input-donation-code") {
+          $(".donation-invoice-section").removeClass("d-none");
+        }
       });
     </script>
   </body>

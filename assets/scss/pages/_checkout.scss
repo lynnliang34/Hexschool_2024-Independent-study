@@ -169,6 +169,7 @@
   }
 }
 
+// 3 選擇付款方式
 .checkout-label {
   font-size: 16px;
 
@@ -244,5 +245,26 @@
 
   @include lg {
     height: 80px;
+  }
+}
+
+// 4 發票選項
+.last-checkout-information {
+  width: 100%;
+
+  @include md {
+    width: 174px;
+  }
+
+  @include lg {
+    width: 304px;
+  }
+}
+
+.fs-note {
+  font-size: 14px;
+
+  @include lg {
+    font-size: 16px;
   }
 }
