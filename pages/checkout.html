@@ -282,10 +282,150 @@
           </div>
         </form>
       </div>
+
+      <!-- 2 選擇優惠券 -->
+      <div class="mb-8 mb-lg-20">
+        <div class="checkout-title mb-4 mb-lg-10">
+          <h2 class="fs-2 fs-lg-0 text-primary">
+            3 <span class="fs-3 fs-lg-1 ms-2">選擇付款方式</span>
+          </h2>
+        </div>
+
+        <form id="payment">
+          <div class="d-flex mb-3 mb-lg-6">
+            <button
+              class="btn btn-outline-primary checkout-btn btn-w-credit-card me-2 me-lg-6"
+            >
+              信用卡
+            </button>
+            <button
+              class="btn btn-outline-primary checkout-btn btn-w-mobile-payment"
+            >
+              行動支付
+            </button>
+          </div>
+
+          <!-- 信用卡 -->
+          <div class="credit-card d-flex flex-column flex-md-row d-none">
+            <div class="credit-card-number me-md-2 me-lg-6">
+              <label
+                for="creditCardNumberInput"
+                class="form-label checkout-label mb-1 mb-lg-2"
+                >信用卡卡號<span class="text-danger ms-1">*</span></label
+              >
+              <input
+                class="form-control checkout-input mb-3 mb-md-0"
+                id="creditCardNumberInput"
+                type="tel"
+                name="card-number"
+                inputmode="numeric"
+                pattern="[0-9\s]{13,19}"
+                maxlength="19"
+                placeholder="**** **** **** ****"
+              />
+            </div>
+            <div class="credit-card-info d-flex justify-content-between">
+              <div class="w-50 me-2 me-lg-6">
+                <label
+                  for="cardExpiryDateInput"
+                  class="form-label checkout-label mb-1 mb-lg-2"
+                  >有效期限</label
+                >
+                <input
+                  class="form-control checkout-input"
+                  id="cardExpiryDateInput"
+                  type="text"
+                  name="expiry-date"
+                  inputmode="numeric"
+                  pattern="(0[1-9]|1[0-2])\/\d{2}"
+                  maxlength="5"
+                  placeholder="MM / YY"
+                />
+              </div>
+              <div class="w-50 me-2 me-lg-6">
+                <label
+                  for="CVCInput"
+                  class="form-label checkout-label mb-1 mb-lg-2"
+                  >辨識碼</label
+                >
+                <input
+                  class="form-control checkout-input"
+                  id="CVCInput"
+                  type="tel"
+                  name="CVC"
+                  inputmode="numeric"
+                  pattern="\d{3,4}"
+                  maxlength="4"
+                  placeholder="CVC/CVV"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- 行動支付 -->
+          <div class="mobile-payment d-flex mb-3 mb-lg-6 d-none">
+            <button class="btn btn-mobile-payment me-2 me-lg-6">
+              <img
+                class="mobile-payment-img"
+                src="/assets/images/payment/Line Pay.png"
+                alt=""
+              />
+            </button>
+            <button class="btn btn-mobile-payment">
+              <img
+                class="mobile-payment-img"
+                src="/assets/images/payment/JKO Pay.png"
+                alt=""
+              />
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script>
+      /*——————————————— 信用卡付款 ———————————————*/
+      $(".btn-w-credit-card").on("click", function (e) {
+        e.preventDefault();
+
+        // 如果當前按鈕已經選取，則取消選取並隱藏信用卡區塊
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+          $(".credit-card").addClass("d-none");
+          return;
+        }
+
+        // 切換 active 狀態
+        $(this).addClass("active");
+        $(".btn-w-mobile-payment").removeClass("active");
+
+        // 顯示信用卡付款區塊，隱藏行動支付區塊
+        $(".credit-card").removeClass("d-none");
+        $(".mobile-payment").addClass("d-none");
+      });
+
+      /*——————————————— 行動支付 ———————————————*/
+      $(".btn-w-mobile-payment").on("click", function (e) {
+        e.preventDefault();
+
+        // 如果當前按鈕已經選取，則取消選取並隱藏行動支付區塊
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+          $(".mobile-payment").addClass("d-none");
+          return;
+        }
+
+        // 切換 active 狀態
+        $(this).addClass("active");
+        $(".btn-w-credit-card").removeClass("active");
+
+        // 顯示行動支付區塊，隱藏信用卡付款區塊
+        $(".mobile-payment").removeClass("d-none");
+        $(".credit-card").addClass("d-none");
+      });
+    </script>
   </body>
 </html>
