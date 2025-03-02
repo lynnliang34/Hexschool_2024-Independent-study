@@ -1,3 +1,4 @@
+// 1 購物車 手機版
 .checkout-title {
   border-bottom: 2px solid $primary;
   height: 55px;
@@ -28,7 +29,7 @@
   }
 }
 
-// 電腦版  1 購物車
+// 1 購物車 電腦版
 .cart-list-table {
   font-size: 18px;
   width: 100%;
@@ -135,7 +136,6 @@
 }
 
 // 2 選擇優惠券
-
 .checkout-input {
   border: 1px solid $neutral-2;
   padding: 8px 12px;
@@ -266,5 +266,130 @@
 
   @include lg {
     font-size: 16px;
+  }
+}
+
+// 5 訂單明細
+.cart-order-header {
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+  background-color: $primary-2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include lg {
+    height: 62px;
+    padding: 0 42px 0 30px;
+  }
+}
+
+.f-order-header {
+  font-size: 16px;
+  font-weight: 400;
+
+  @include md {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  @include lg {
+    font-size: 28px;
+  }
+}
+
+.cart-order-item {
+  height: 48px;
+  padding: 0 20px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include md {
+    font-size: 18px;
+  }
+
+  @include lg {
+    height: 42px;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.order-class-name {
+  max-width: 200px;
+
+  @include sm {
+    max-width: 350px;
+  }
+
+  @include md {
+    max-width: inherit;
+    width: 180px;
+  }
+
+  @include lg {
+    width: 224px;
+  }
+}
+
+.cart-order-subtotal {
+  height: 72px;
+  padding: 0 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: $primary-2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  @include md {
+    font-size: 18px;
+  }
+
+  @include lg {
+    height: 108px;
+    font-size: 28px;
+  }
+}
+
+.cart-order-discount {
+  height: 48px;
+  padding: 0 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  @include md {
+    font-size: 18px;
+  }
+
+  @include lg {
+    height: 82px;
+    font-size: 28px;
+  }
+}
+
+.cart-order-payment {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: $primary-2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  @include md {
+    font-size: 18px;
+  }
+
+  @include lg {
+    height: 80px;
+    font-size: 32px;
   }
 }
