@@ -126,3 +126,44 @@
     display: block; /* 避免圖片下方出現空白 */
     opacity: 1; /* 確保圖片可見 */
 }
+
+
+.explore-courses {
+    .nav-link{
+        color:#484848;
+        background-color: #F6F4E9;
+    }
+    .nav-pills{
+        .nav-link{
+            border-radius: 10px 10px 0px 10px;
+        
+            &.active , 
+            .show > &{
+                background-color: #E79776 !important;
+            }
+        }
+    }
+
+    .card{
+        .btn:hover{
+            color: #FFFFFF;
+            background-color: #E79776 !important;
+            border-color:  #E79776 !important;
+        }
+    }
+} 
+
+.other-areas {
+    .button-list {
+        list-style: none;
+    
+        .btn-custom {
+            width: 100%;
+            height: 100px;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+

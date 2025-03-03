@@ -12,104 +12,424 @@
     <%- include('./layout/header'); -%>
         <div class="container py-3 pt-lg-0 pb-lg-8 px-lg-15 mt-4 mb-6 my-lg-20">
             <div class="text-center">
-                <h1 class="fs-3 fs-lg-0">知識分享</h1>
+                <h1 class="fs-3 fs-lg-0">探索課程</h1>
                 <hr class="my-3 my-lg-8" />
-                <h2 class="fs-5 fs-lg-1">獲取新知,拓展人生視野。</h2>
+                <h2 class="fs-5 fs-lg-1">豐富生活體驗，開啟人生新篇章</h2>
             </div>
         </div>
-        <div class="container">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">運動保健</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-psycho-tab" data-bs-toggle="pill" data-bs-target="#pills-psycho"
-                        type="button" role="tab" aria-controls="pills-psycho" aria-selected="false">心理成長</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-community-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-community" type="button" role="tab" aria-controls="pills-community"
-                        aria-selected="false">社區活動</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills"
-                        type="button" role="tab" aria-controls="pills-skills" aria-selected="false">生活技能</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="row row-cols-lg-3 gx-lg-6 gy-3 gy-lg-10">
-                        <div class="col">
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <section class="explore-courses mb-36">
+            <div class="container">
+                <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+                    <li class="nav-item me-2" role="presentation">
+                        <button class="nav-link fs-3 fw-bold active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">運動保健</button>
+                    </li>
+                    <li class="nav-item me-2" role="presentation">
+                        <button class="nav-link fs-3 fw-bold " id="pills-psycho-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-psycho" type="button" role="tab" aria-controls="pills-psycho"
+                            aria-selected="false">心理成長</button>
+                    </li>
+                    <li class="nav-item me-2" role="presentation">
+                        <button class="nav-link fs-3 fw-bold" id="pills-community-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-community" type="button" role="tab" aria-controls="pills-community"
+                            aria-selected="false">社區活動</button>
+                    </li>
+                    <li class="nav-item me-2" role="presentation">
+                        <button class="nav-link fs-3 fw-bold" id="pills-skills-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-skills" type="button" role="tab" aria-controls="pills-skills"
+                            aria-selected="false">生活技能</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="row row-cols-lg-3 gx-lg-6 gy-3 gy-lg-10">
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="tab-pane fade" id="pills-psycho" role="tabpanel" aria-labelledby="pills-psycho-tab">
+                        <div class="row row-cols-lg-3 gx-lg-6 gy-3 gy-lg-10">
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            心理成長
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="tab-pane fade" id="pills-community" role="tabpanel"
+                        aria-labelledby="pills-community-tab">
+                        <div class="row row-cols-lg-3 gx-lg-6 gy-3 gy-lg-10">
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            社區活動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab">
+                        <div class="row row-cols-lg-3 gx-lg-6 gy-3 gy-lg-10">
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            生活技能
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card px-2 pt-2 bg-primary-2 border-0">
+                                    <img src="/assets/images/man-helping-woman-straighten-her-back.png" class="rounded"
+                                        alt="straighten">
+                                    <div class="card-body px-0 pb-2">
+                                        <h2
+                                            class="card-title text-primary border border-primary rounded-5px d-inline-block p-2 mb-3">
+                                            輕鬆有氧運動
+                                        </h2>
+                                        <p class="card-text fs-4 mb-3 up-to-2-lines">低衝擊性有氧運動,如步行、騎腳踏車或游泳,提升心肺功能和耐力。</p>
+                                        <button type="button"
+                                            class="btn btn-outline-dark bg-white fs-7 d-flex ms-auto align-items-center">了解更多
+                                            <span class="material-symbols-outlined ms-2">
+                                                chevron_right
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-psycho" role="tabpanel" aria-labelledby="pills-psycho-tab">...
-                </div>
-                <div class="tab-pane fade" id="pills-community" role="tabpanel" aria-labelledby="pills-community-tab">
-                    ...
-                </div>
-                <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab">...
-                </div>
-            </div>
 
-            <div class="container pb-6 pb-lg-10 ">
-                <div class="position-relative decoLine"></div>
-                <h3 class="fs-lg-1 mt-2 mt-lg-4">探索其他領域</h3>
-            </div>
-            <%- include('./layout/footer'); -%>
+                <div class="mt-10 pb-6 pb-lg-10 ">
+                    <div class="position-relative decoLine"></div>
+                    <h3 class="fs-lg-1 mt-2 mt-lg-4">探索其他領域</h3>
+                </div>
+
+                <div class="other-areas container">
+                    <ul class="button-list row ps-0 gx-4 gy-3">
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/music.png');">音樂</button>
+                        </li>
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/language.png');">語言</button>
+                        </li>
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/photography.png');">攝影</button>
+                        </li>
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/art.png');">藝術</button>
+                        </li>
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/design.png');">設計</button>
+                        </li>
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/humanities.png');">人文</button>
+                        </li>
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/marketing.png');">行銷</button>
+                        </li>
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/program.png');">程式</button>
+                        </li>
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/investment.png');">投資理財</button>
+                        </li>
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/job skills.png');">職場技能</button>
+                        </li>
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/handmade.png');">手做</button>
+                        </li>
+                        <li class="col-2">
+                            <button class="btn btn-custom fs-2 fw-bold text-neutral-1 text-align border-0 rounded"
+                                style="background-image: url('/assets/images/explore\ other\ areas/life style.png');">生活品味</button>
+                        </li>
+                    </ul>
+
+                </div>
+        </section>
+        <%- include('./layout/footer'); -%>
 
 
-                <script
-                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-                <script type="module" src="../main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+            <script type="module" src="../main.js"></script>
 </body>
 
 </html>
