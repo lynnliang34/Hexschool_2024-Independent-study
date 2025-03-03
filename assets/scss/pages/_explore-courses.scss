@@ -150,6 +150,16 @@
         }
     }
 
+    .tab-content .btn{
+        padding: 0px 8px;
+        line-height: 16px;
+        border-radius: 10px;
+
+        @include lg{
+            padding: 8px 16px;
+        }
+    }
+
     .card{
         .btn:hover{
             color: #FFFFFF;
