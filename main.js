@@ -38,7 +38,7 @@ $(document).ready(function () {
 
     // 隱藏「註冊」與「登入」，顯示「購物車」與「登出」
     $(".login-link, .register-link").addClass("d-none");
-    $(".logout-link, .cart-link").removeClass("d-none");
+    $(".logout-link, .provile-link, .cart-link-circle").removeClass("d-none");
   });
 
   // 點擊登出
@@ -47,6 +47,6 @@ $(document).ready(function () {
 
     // 顯示「註冊」與「登入」，隱藏「購物車」與「登出」
     $(".login-link, .register-link").removeClass("d-none");
-    $(".logout-link, .cart-link").addClass("d-none");
+    $(".logout-link, .provile-link, .cart-link-circle").addClass("d-none");
   });
 });
