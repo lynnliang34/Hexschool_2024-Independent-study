@@ -16,17 +16,19 @@ $(document).click(function (event) {
 });
 
 // 頁面連結收合
-$(".modal-link-1").click(function (event) {
-  $(this).next(".modal-link-1ist").toggleClass("d-none");
-  $(this).find(".modal-link-arrow").toggleClass("rotate");
+$(".modal-arrow-link").click(function (event) {
+  e.preventDefault(); // 避免點擊影響其他連結行為
+  let parent = $(this).closest(".modal-link");
+  let menu = parent.find(".modal-link-1ist");
+  let arrow = $(this).find(".modal-link-arrow");
 
-  if ($(".modal-link-1").not($(this)).next(".modal-link-1ist").not(".d-none")) {
-    $(".modal-link-1").not($(this)).next(".modal-link-1ist").addClass("d-none");
-    $(".modal-link-1")
-      .not($(this))
-      .find(".modal-link-arrow")
-      .addClass("rotate");
-  }
+  // 切換當前選單的顯示狀態
+  menu.toggleClass("d-none");
+  arrow.toggleClass("rotate");
+
+  // 關閉其他已展開的選單
+  $(".modal-link-1ist").not(menu).addClass("d-none");
+  $(".modal-link-arrow").not(arrow).addClass("rotate");
 });
 // 導覽列手機版 ↑
 
