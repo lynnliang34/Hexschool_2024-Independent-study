@@ -346,3 +346,18 @@
 .modal-body {
   overflow-y: scroll;
 }
+
+.provile-link {
+  &:hover {
+    .provile-photo {
+      fill: $secondary-2;
+    }
+  }
+}
+
+.provile-photo {
+  width: 46px;
+  height: 46px;
+  fill: $primary;
+  transition: 0.15s;
+}
