@@ -16,7 +16,7 @@ $(document).click(function (event) {
 });
 
 // 頁面連結收合
-$(".modal-arrow-link").click(function (event) {
+$(".modal-arrow-link").click(function (e) {
   e.preventDefault(); // 避免點擊影響其他連結行為
   let parent = $(this).closest(".modal-link");
   let menu = parent.find(".modal-link-1ist");
