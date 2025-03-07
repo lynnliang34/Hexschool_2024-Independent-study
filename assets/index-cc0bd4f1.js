@@ -1,0 +1,1 @@
+import"./main-4ff9cf6f.js";new Swiper(".swiper",{direction:"horizontal",loop:!0,speed:8e3,autoplay:{delay:0,disableOnInteraction:!1},freeMode:!0,slidesPerView:2.2,spaceBetween:8,breakpoints:{768:{slidesPerView:2.8,spaceBetween:20},992:{slidesPerView:3.5,spaceBetween:32}}});
